@@ -19,7 +19,7 @@ cartWrap.onmouseleave=function(){
      } 
 }
 var timer1 = document.getElementById("timer")
-imglist = document.getElementById('timer').children      
+var imglist = document.getElementById('timer').children      
 function fn1(){
     var dt1=new Date();
     var dt2=new Date("2020,08,29,24:00:00")//如果用字符串写为"2020,07,04,24:00:00"
