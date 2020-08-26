@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../../dist/css/b.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+</head>
+<body>
+    <div class="modal" style="width:420px;left:421.5px;padding-bottom:10px;">
+        <div class="modal-header">
+            <div class="title">
+                <button class="close" type="button">×</button>
+            </div>
+        </div>
+        <div class="modal-body" style="height:400px;max-height:none;">
+            <div class="content">
+               <link rel="stylesheet" type="text/css" href="#">
+              <div class="layout-login">
+                <div class="logo">
+                <i class="icon-logo"></i>
+                </div>
+                <div class="login-switch">
+                <div class="login-up-btn active">账户密码登录</div>
+                <div class="login-phone-btn ">手机验证码登录</div>
+                </div>
+                <form class="login-pop-form" id="form_login" method="get" style="display:block;">
+                <input type="hidden" name="from" value="pop">
+                <input type="hidden" name="jumpurl" value="">
+                <div class="error-message">
+                    <div class="error-message-box" style="display: none">
+                        <i class="icon-error-del"></i>
+                        <span class="loginpop-warn"></span>
+                    </div>
+                </div>
+                <div class="loginpop-user clearfix">
+                    <div class="input-wrap">
+                        <input name="username" class="name login_messageName" placeholder="请输入手机号/邮箱/用户名" type="text" value="" autocomplete="off" data-url_check_username="https://www.ehsy.com/index.php?route=account/login/check_username">
+                        <i class="icon sprite-loginpop_clear"></i>
+                    </div>
+                </div>
+                <div class="loginpop-mes-code clearfix">
+                    <div class="input-wrap">
+                        <input name="login_messageCode" class="name login_messageCode" placeholder="短信验证码" autocomplete="off" type="text">
+                        <i class="icon sprite-loginpop_clear"></i>
+                        <button type="button" class="code" data-action="https://www.ehsy.com/index.php?route=account/register/sms_verify_code&amp;nocode=1">获取</button>
+                    </div>
+                </div>
+                <div class="pwd-rule">6-20位，字母、数字、符号（除空格）至少两种组成</div>
+                <div class="loginpop-password clearfix">
+                <div class="input-wrap">
+                    <input class="pwd" placeholder="请输入密码" name="password" type="password" autocomplete="off">
+                    <i class="icon sprite-loginpop_clear"></i>
+                </div>
+                </div>
+                <input type="button" class="loginpop-btn"  value="登录">
+                <div class="loginpop-auto">
+                    <div class="checkbox-auto-bg">
+                        <i class="sprite-auto_login"></i>
+                    </div>
+                    <input id="auto-login-checkbox" name="login_isRememberCount" type="checkbox" checked="checked">
+                    <label for="auto-login-checkbox">记住用户名 | </label>
+                    <a class="forget-assword" href="https://www.ehsy.com/index.php?route=account/findpwd">找回密码</a>
+                    <a class="register-now for-login" href="https://www.ehsy.com/index.php?route=account/register&amp;regtype=person">注册</a>
+                </div>
+        
+                </form>        
+                <form class="login-pop-form" id="form_login_phone" style="display: none;" method="get">
+                <input type="hidden" name="from" value="pop">
+                <input type="hidden" name="jumpurl" value="">
+        
+                <div class="error-message">
+                    <div class="error-message-box2" style="display: none">
+                        <i class="icon-error-del"></i>
+                        <span class="loginpop-warn2"></span>
+                    </div>
+                </div>
+                <div class="loginpop-user clearfix">
+                    <div class="input-wrap">
+                        <input name="login_phone" class="name login_messageName" placeholder="请输入手机号" type="text" value="" autocomplete="off" data-url_check_username="https://www.ehsy.com/index.php?route=account/login/check_username">
+                        <i class="icon sprite-loginpop_clear"></i>
+                    </div>
+                </div>
+        
+                <div class="loginnpop-phone-code clearfix" style="display: block">
+                    <div class="input-wrap">
+                        <input name="login_messageCode" class="name login_messageCode" placeholder="请输入短信验证码" autocomplete="off" type="text">
+                        <i class="icon sprite-loginpop_clear"></i>
+                    </div>
+                    <div class="verify-code">
+                        <button type="button" class="code login_tncode" data-status="0" data-timeid="0">获取验证码</button>
+                    </div>
+                </div>
+        
+                <input type="button" class="loginpop-btn" onclick="ajax_login_phone(this);" value="登录">
+        
+                <div class="loginpop-auto">
+                    <div class="checkbox-auto-bg">
+                        <i class="sprite-auto_login"></i>
+                    </div>
+                    <input id="auto-login-checkbox2" name="login_isRememberCount" type="checkbox" checked="checked">
+                    <label for="auto-login-checkbox2">记住用户名</label>
+                    <a class="register-now for-login" href="https://www.ehsy.com/index.php?route=account/register&amp;regtype=person">注册</a>
+                </div>
+               </form>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg">
+
+    </div>
+    <script src="../js/denglu.js"></script>
+    <script src="../js/public.js"></script>
+</body>
+</html>

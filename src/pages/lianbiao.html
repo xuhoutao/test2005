@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表页</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/home8.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+</head>
+<body>
+        <div class=" header">
+           <div class="header-bar">
+            <div class="header-bar1 container">
+               <div class="header-left">
+                     <a class="fl">欢迎15279392841</a>
+                     <span>|</span>
+                     <a  class="fl" href="">帮助中心</a>
+              </div>
+              <div class="header-right">
+                <div class="right-bar">
+                    <a class="fr js-proxy-qqChat" href="" target="_blank"><i class="iconfont icon-kefu icon-header-bar-help"></i>在线客服</a>
+                    <li class="fr">|</li>
+                            <span rel="external nofollow" class="fr" ><i class="iconfont icon-dianhua icon-header-bar-help"></i><span class="text-earphone">400-821-8800</span></span>
+                            <li class="fr">|</li>
+                    <li class="fr mobile-show">
+                        <a rel="external nofollow" class="mobile-ahref">
+                            <i class="iconfont icon-shouji icon-header-bar-help"></i>手机西域
+                            <i class="iconfont icon-jiantou icon-header-bar1-help"></i>
+                        </a>
+                        <div class="mobile-ehsy-download">
+                            <img style="width: 130px;height: 130px;" src="../images/code-app.png" class="mobile-code" alt="手机西域下载二维码">
+                            <div class="saoyisao">扫一扫,下载西域客户端</div>
+                            <div class="shoujigouwu">手机采购 移动办公</div>
+                            <a rel="external nofollow" href="https://itunes.apple.com/cn/app/id1063629472?mt=8" target="_blank">
+                                <i class="iconfont icon-shezhi icon-header-bar-code-help"></i>
+                            </a>
+                            <a rel="external nofollow" href="https://itunes.apple.com/cn/app/id1063629472?mt=8" target="_blank">
+                                <span class="mo-ios-span">iPhone</span>
+                            </a>
+                            <a rel="external nofollow" href="http://static-c.ehsy.com/www/files/ehsy.apk">
+                                <i class="iconfont icon-jiantou icon-header-bar-code-help"></i>
+                            </a>
+                            <a href="http://static-c.ehsy.com/www/files/ehsy.apk">
+                                <span class="mo-android-span">Android</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="fr">|</li>
+                    <a rel="external nofollow" class="fr" href="https://www.ehsy.com/index.php?route=quick/cart">快速下单</a>
+                            <li class="fr">|</li>		
+                    <li class="fr my-ehsy-show">
+                        <a class="ehsy-a"  rel="external nofollow">
+                            <i class="iconfont icon-shezhi icon-header-bar-help"></i>我的西域
+                            <i class="iconfont icon-jiantou icon-header-bar1-help"></i>
+                        </a>
+                        <div class="my-ehsy js-clone-myehsy">
+                            <ul>
+                                                <div class="orders">
+                                    <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order');"><i class="iconfont icon-dingdan icon-header-bar-my-1-1"></i>我的订单</a></li>
+                                    <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_pay');"><i class="iconfont icon-daifukuan icon-header-bar-my-2-1"></i>待付款</a></li>
+                                    <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_take');"><i class="iconfont icon-shouhuo icon-header-bar-my-3-1"></i>待收货</a></li>
+                                </div>
+                                    <div class="orders">
+                                        <li class="header-my-collection"><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/favorite');"><i class="iconfont icon-shoucang icon-header-bar-my-1-2"></i>我的收藏</a></li>
+                                        <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/mycoupon');"><i class="iconfont icon-youhui icon-header-bar-my-2-2"></i>我的优惠券</a></li>
+                                        <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_after');"><i class="iconfont icon-shouhou icon-header-bar-my-3-2"></i>售后</a></li>
+                                    </div>
+                                    <div class="orders">
+                                        <!-- <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/free_inquiry');"><i class="icon-header-bar icon-header-bar-my-1-3"></i>我的询价</a></li> -->
+                                        <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/quotation');"><i class="iconfont icon-pajia icon-header-bar-my-2-3"></i>我的报价单</a></li>
+                                        <li class="header-my-consultant"><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/ask');"><i class="iconfont icon-zixun icon-header-bar-my-3-3"></i>我的咨询</a></li>
+                                    </div>
+            
+                              </ul>
+                        </div>
+                    </li>
+                    <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+           </div>
+            <div class="header-car">
+            <div class="header-logo">
+                <div class="header-logo1">
+                 <a href="https://www.ehsy.com/" title="西域网">
+                     <img src="../images/logo.png" alt="西域网" style="max-width:264px; max-height:48px;">
+                  </a>
+                </div>
+            </div>
+            <div class="header-cen">
+               <i class="icon-camera onclick=" modalshow();>
+                 <span class="tooltiptext" style="display: none;">上传图片&nbsp;/&nbsp;搜索相关产品</span>
+             </i> 
+             <input class="header-cen-input" placeholder="请输入产品名称 品牌 型号 SKU号 或CAS号" type="text" name="search" value="" autocomplete="off">
+             <div class="header-cen-submit btn-search" url="https://www.ehsy.com/search">搜索</div>
+             <ul class="hot-word">
+                 <li><a target="_blank" class="first-link" href="https://www.ehsy.com/activity/pc-FHDX">雨季防洪度汛产品推荐</a></li>
+                 <li><a target="_blank" class="first-link" href="https://www.ehsy.com/activity/pc-repertork">防暑攻略必备</a></li>
+             </ul>
+            </div>
+            <div class="header-gou">
+               <a rel="external nofollow" class="cart-wrap" href="./gouwuche.html">
+                 <i></i>
+                 <span class="text">我的购物车</span>
+                 <span class="cart-num"> <span class="text-cart-count">0</span> </span>
+               </a>
+               <div class="header-gou-1">
+                 <span class="carts-empty-text">购物车中还没有商品，赶快选购吧！</span>
+               </div>
+            </div>
+           </div>
+        </div>
+        <div class="content-menu">
+            <div class="menu-t">
+            <div class="menu-bn">
+                <div class="menu-all">
+                    <div class="menu-box">
+                        <span class="menu-box-span">
+                            <i class="iconfont icon-caidan sprite-list"></i>全部商品分类</span>
+                    </div>
+                </div>
+             </div>
+            </div>
+            <div class="menu-body">
+            <ul>
+                <li style="width: 48px;"><a href="https://www.ehsy.com/">首页</a></li>
+    
+                <li class="menu-hot" style="width: 143px;margin-left: 0;"><a rel="nofollow" href="/activity/pc-Raxwell">Raxwell专区 
+                <img src="../images/shape.png" alt=""></a></li>
+                <li class="menu-hot"><a rel="nofollow" href="https://www.ehsy.com/index.php?route=search/result/hasstock">现货专区</a>
+    
+                </li>
+                <li style="width: 110px;margin-right: 0;"><a href="https://eis.ehsy.com/">西域工业品集采</a></li>
+    
+                <li style="margin-right: 0;"><a href="https://www.ehsy.com/brand/list">品牌中心</a></li>
+                            <li><a rel="nofollow" href="https://www.ehsy.com/about">走进西域</a></li>
+                <li><a rel="nofollow" href="https://www.ehsy.com/supplier">供应商合作</a></li>
+                <div class="clear"></div>
+            </ul>
+            </div>
+        </div>
+        <div class="layout-category-content">
+            <div class="crumbs">
+                <script>
+                    var datatistCrumbPath = '';
+                </script>
+                <a href="https://www.ehsy.com/">首页</a><span>&gt;</span>
+                <a href="https://www.ehsy.com/tools">工具</a>
+                <script>
+                    datatistCrumbPath += ('工具') + '>';
+                </script>
+               <span><span>&gt;</span></span>
+                <div class="category-new-bread">
+                    <div class="bread-title">
+                        <a class="bread-span" href="https://www.ehsy.com/category-2961">工具套装</a>
+                                        <span class="bread-dot"></span>
+                    </div>
+                    <div class="bread-content">
+                                        <a href="https://www.ehsy.com/category-2961" class="disable-bread ex-li " title="工具套装">工具套装</a>                             
+                                        <a href="https://www.ehsy.com/category-2962" class=" ex-li " title="工具车及箱包">工具车及箱包</a>
+                                        <a href="https://www.ehsy.com/category-18399" class=" ex-li is-third"  title="铆接工具">铆接工具</a>
+                                        <a href="https://www.ehsy.com/category-28618" class=" ex-li " title="电子装配机具">电子装配机具</a>                       
+                                        <a href="https://www.ehsy.com/category-71" class=" ex-li " title="扳手/手动套筒">扳手/手动套筒</a>                     
+                                        <a href="https://www.ehsy.com/category-11850" class=" ex-li is-third"  title="钳/夹">钳/夹</a>
+                                        <a href="https://www.ehsy.com/category-2965" class=" ex-li " title="锤/锉/锯/刀/尺">锤/锉/锯/刀/尺</a>       
+                                        <a href="https://www.ehsy.com/category-2963" class=" ex-li " title="螺丝刀">螺丝刀</a>                       
+                                        <a href="https://www.ehsy.com/category-12598" class=" ex-li is-third"  title="扭力工具">扭力工具</a>                       
+                                        <a href="https://www.ehsy.com/category-2958" class=" ex-li " title="电工工具">电工工具</a>                       
+                                        <a href="https://www.ehsy.com/category-2966" class=" ex-li " title="钳工工具">钳工工具</a>                       
+                                        <a href="https://www.ehsy.com/category-16880" class=" ex-li is-third"  title="充电式工具">充电式工具</a>
+                                        <a href="https://www.ehsy.com/category-27" class=" ex-li " title="电动工具">电动工具</a>
+                                        <a href="https://www.ehsy.com/category-60" class=" ex-li " title="气动工具">气动工具</a>                   
+                                        <a href="https://www.ehsy.com/category-83" class=" ex-li is-third"  title="液压工具">液压工具</a> 
+                                        <a href="https://www.ehsy.com/category-3660" class=" ex-li " title="管道工具">管道工具</a>
+                                        <a href="https://www.ehsy.com/category-2959" class=" ex-li " title="电子焊接及防静电工具">电子焊接及防静电工具</a>  
+                                        <a href="https://www.ehsy.com/category-2964" class=" ex-li is-third"  title="汽修汽保工具">汽修汽保工具</a>                 
+                                        <a href="https://www.ehsy.com/category-2960" class=" ex-li " title="防爆工具">防爆工具</a>                
+                                        <a href="https://www.ehsy.com/category-16883" class=" ex-li " title="特种扳手">特种扳手</a>             
+                                        <a href="https://www.ehsy.com/category-4159" class=" ex-li is-third"  title="园林/家装工具">园林/家装工具</a>
+                                        <a href="https://www.ehsy.com/category-74" class=" ex-li " title="动力工具附件">动力工具附件</a>                
+                                        <a href="https://www.ehsy.com/category-29827" class=" ex-li " title="铁路维护工具">铁路维护工具</a>
+                                        <a href="https://www.ehsy.com/category-30390" class=" ex-li is-third"  title="畜牧养殖设备">畜牧养殖设备</a>
+                    </div>
+                </div>
+                <script>
+                    datatistCrumbPath += ('工具套装') + '>';
+                </script>
+                        <span><span>&gt;</span></span>
+                <div class="category-new-bread">
+                    <div class="bread-title">
+                        <a class="bread-span" href="https://www.ehsy.com/category-2249">综合套装</a>     
+                                  <span class="bread-dot"></span>
+                    </div>
+                    <div class="bread-content">
+                                        <a href="https://www.ehsy.com/category-2249" class="disable-bread ex-li " title="综合套装">综合套装</a>                    
+                                        <a href="https://www.ehsy.com/category-2250" class=" ex-li " title="电讯工具套装">电讯工具套装</a>
+                                        <a href="https://www.ehsy.com/category-2252" class=" ex-li is-third"  title="基本维修工具套装">基本维修工具套装</a>
+                                        <a href="https://www.ehsy.com/category-3782" class=" ex-li " title="套筒旋具头综合套装">套筒旋具头综合套装</a>                    
+                                        <a href="https://www.ehsy.com/category-2253" class=" ex-li " title="电子维修套装">电子维修套装</a>
+                                        <a href="https://www.ehsy.com/category-2487" class=" ex-li is-third"  title="家用工具套装">家用工具套装</a>
+                                        <a href="https://www.ehsy.com/category-2486" class=" ex-li " title="随车工具套装">随车工具套装</a>
+                                        <a href="https://www.ehsy.com/category-2251" class=" ex-li " title="汽修工具套装">汽修工具套装</a>
+                                        <a href="https://www.ehsy.com/category-3611" class=" ex-li is-third"  title="电梯维修保养套装">电梯维修保养套装</a>
+                    </div>
+                </div>
+                <script>
+                    datatistCrumbPath += ('综合套装') + '>';
+                </script>
+                        <span></span>
+                                
+            </div>
+            <div class="layout-result-filter filter">
+                <div class="category has-pinyin-filter" data-id="brandId">
+                    <div class="categoryName" data-id="brandId">
+                         <span class="category-name-span">品牌</span>
+                    </div>
+                    <div class="mult-filter">
+                                 <span class="mult-filter-all ev-pinyin">所有品牌</span>                                                                                                                                                                                                                                                                                                                                                                                                                                         <span class="mult-filter-each ev-pinyin each-pinyin">G</span>
+                                <span class="mult-filter-each ev-pinyin each-pinyin">J</span>
+                                <span class="mult-filter-each ev-pinyin each-pinyin">S</span>
+                                <span class="mult-filter-each ev-pinyin each-pinyin">W</span>
+                                <span class="mult-filter-each ev-pinyin each-pinyin">X</span>
+                                <span class="mult-filter-each ev-pinyin each-pinyin">Y</span>
+                    </div>
+                    <div class="categoryWrap">
+                         <a class="categoryEach productLine ev-mult-link  " data-pinyin="S" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22brandId%22%3A%5B%22191%22%5D%7D">
+                          <i class="icon-search sprite-checkbox"></i>
+                         <span class="att-val" data-val="191">世达</span>
+                         </a>
+                                            <a class="categoryEach productLine ev-mult-link  " data-pinyin="W" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22brandId%22%3A%5B%222306%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="2306">伍尔特</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="S" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22brandId%22%3A%5B%22190%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="190">史丹利</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="J" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22brandId%22%3A%5B%2295%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="95">吉多瑞</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="Y" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22brandId%22%3A%5B%224155%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="4155">易尔拓</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="X" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22brandId%22%3A%5B%2223112%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="23112">西域推荐</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="G" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22brandId%22%3A%5B%221428%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="1428">钢盾</span>
+                                    </a>
+                     </div>
+                    <button class="mult-button confirm ev-mult-confirm">确定</button>
+                    <button class="mult-button cancel ev-mult-cancel">取消</button>
+                    <div class="options mult">
+                    <div class="multSelection ev-moreAttr">
+                        <span>多选</span>
+                        <i class="add-mult"></i>
+                    </div>
+                    </div>
+                    <div class="options more not-visible">
+                    <div class="moreSelection ev-expandAttr">
+                        <span>更多</span>
+                        <i class="add-more"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="category" data-id="da_2538_s">
+                   <div class="categoryName" data-id="da_2538_s">
+                       <span class="category-name-span">组套件数</span>
+                   </div>
+                   <div class="categoryWrap">
+                                            <a class="categoryEach productLine ev-mult-link  " data-pinyin="5" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%225%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="5">5</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="2" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2220%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="20">20</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="2" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2221%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="21">21</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="2" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2225%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="25">25</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="2" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2226%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="26">26</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="2" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2228%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="28">28</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="2" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2229%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="29">29</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="3" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2231%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="31">31</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="3" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2232%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="32">32</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="3" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2238%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="38">38</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="4" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2240%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="40">40</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="4" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2242%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="42">42</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="4" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2249%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="49">49</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="5" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2257%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="57">57</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="5" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2258%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="58">58</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="6" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2261%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="61">61</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="6" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2264%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="64">64</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="7" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2276%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="76">76</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="7" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2278%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="78">78</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="7" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%2279%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="79">79</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="1" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%22103%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="103">103</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="1" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%22110%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="110">110</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="1" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%22120%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="120">120</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="1" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%22125%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="125">125</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="1" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%22150%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="150">150</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="1" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%22171%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="171">171</span>
+                                    </a>
+                                                        <a class="categoryEach productLine ev-mult-link  " data-pinyin="2" href="https://www.ehsy.com/category-2249?s=1&amp;f=%7B%22da_2538_s%22%3A%5B%22224%22%5D%7D">
+                        <i class="icon-search sprite-checkbox"></i> <span class="att-val" data-val="224">224</span>
+                                    </a>
+                   </div>
+                   <button class="mult-button confirm ev-mult-confirm">确定</button>
+                   <button class="mult-button cancel ev-mult-cancel">取消</button>
+                   <div class="options mult">
+                       <div class="multSelection ev-moreAttr">
+                          <span>多选</span>
+                          <i class="add-mult"></i>
+                       </div>
+                   </div>
+                   <div class="options more">
+                      <div class="moreSelection ev-expandAttr">
+                         <span>更多</span>
+                         <i class="add-more"></i>
+                     </div>
+                   </div>
+               </div>               
+            </div>
+            <div class="layout-product-list-tips fixed">
+             <div class="showIf">
+                <ul class="sort sort-1">
+                    <li class="default">
+                                        <a href="https://www.ehsy.com/category-2249"><h1 style="font-size: 12px;">综合套装综合排名</h1></a>
+                    </li>
+                    <li class="time">
+                        <a rel="nofollow" href="https://www.ehsy.com/category-2249?s=3">货期</a>
+                    </li>
+                    <li class="price">
+                        <a rel="nofollow" href="https://www.ehsy.com/category-2249?s=2">价格
+                        <div class="sortWrap dsce">
+                            <i class="up"></i>
+                            <i class="down"></i>
+                            </div>
+                        </a>
+                    </li>
+                                            <li class="other-select">
+                        <a rel="nofollow" href="https://www.ehsy.com/category-2249?s=1&amp;hasStock=true"><i class="sprite-select_no"></i>有库存</a>
+                    </li>
+                </ul>
+                <div class="page-add-cart">
+                    <div class="addInCart addInCart-disabled js-list-product-add-cart" data="https://www.ehsy.com/index.php?route=checkout/cart">加入购物车</div>
+                </div>
+                <div class="page-ctrl">
+                    <a class="prePage">&lt;</a>
+                    <a class="nexPage">&gt;</a>
+                </div>
+                <div class="page-count">
+                    <span class="curPage">1</span>
+                    <span>/</span>
+                    <span class="fullPage">1</span>
+                </div>
+                <ul class="showModal">
+                    <li class="bigImg ev-showmodel ">
+                        <i class="bigImg-icon"></i>
+                        <span>大图</span>
+                    </li>
+                    <li class="list ev-showmodel active">
+                        <i class="list-icon"></i>
+                        <span>列表</span>
+                    </li>
+                </ul>
+                <div class="total-count">
+                    共<p>&nbsp;&nbsp;33&nbsp;&nbsp;</p>件商品
+                </div>
+            </div>
+            </div>
+            <div id="product-formation" class="listMode fixed">
+             <ul class="commodity-information">
+                <li class="commodity-information-title">商品信息</li>
+                <li class="commodity-parameter">
+                                            <span style="width:124.83333333333px" title="品牌">品牌</span>
+                    <span style="width:124.83333333333px" title="型号">型号</span>
+                                <span style="width:124.83333333333px" title="组套件数">组套件数</span>
+                                <span style="width:124.83333333333px" title="扳手">扳手</span>
+                                <div class="price-intro-wraper" style="width:124.83333333333px">
+                        <i class="sprite-question-ico question-ico"></i>
+                        <span class="price-intro" title="价格" style="text-align:center;width:100%; padding:0;">西域价</span>
+                        <div class="price-intro-div">
+                            <div class="remind-title">价格说明：</div>
+                            <div class="remind-content">西域价：</div>
+                            <div class="remind-content">是指普通会员最终购买商品的价格。</div>
+                            <br>
+                            <div class="remind-content">会员价或折扣价:</div>
+                            <div class="remind-content">是指通过企业认证的会员，可享的专属审批折扣价。</div>
+                        </div>
+                    </div>
+                    <span style="width:124.83333333333px" title="预计出货日">预计出货日</span>
+                </li>
+                <li class="purchase-count-title">购买数量</li>
+            </ul>
+            </div>
+            <div class="layout-product-list">
+                <div class="product-list listMode">
+                </div>
+            </div>
+            <div class="showPagintion clearfix">
+
+            </div>
+            <div class="layout-module-product clear">
+                <div class="recommend-good">
+                    <div class="recommend-tabs">	
+                        <span class="active js-tabs-title" style="margin-left: -1px;" onclick="tabs(this,'love');">猜你喜欢</span>
+                                <span class="js-tabs-title" onclick="tabs(this,'new');">新品推荐</span>
+                    </div>
+                    <div class="recommend-list r-hot-sale clearfix js-tabs-content js-tabs-love">
+                                    <div class="R-sku">
+                            <a href="https://www.ehsy.com/product-MAA310" title="博世切片，100X16X2mm 46# 耐磨，2608600848" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2017/04/06/20170406160940478_M.jpg" alt="博世切片，100X16X2mm 46# 耐磨，2608600848">
+                            </a>
+                            <a class="r-product-name" href="https://www.ehsy.com/product-MAA310" title="博世切片，100X16X2mm 46# 耐磨，2608600848" target="_blank">博世切片，100X16X2mm 46# 耐磨，2608600848</a>
+                            <span class="r-product-price">¥ 4.09</span>
+                        </div>
+                                    <div class="R-sku">
+                            <a href="https://www.ehsy.com/product-MAA086" title="博世角磨机，4&quot;迷你型 GWS 6-100，670W，0601375043" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2016/12/06/20161206173935301_M.jpg" alt="博世角磨机，4&quot;迷你型 GWS 6-100，670W，0601375043">
+                            </a>
+                            <a class="r-product-name" href="https://www.ehsy.com/product-MAA086" title="博世角磨机，4&quot;迷你型 GWS 6-100，670W，0601375043" target="_blank">博世角磨机，4"迷你型 GWS 6-100，670W，0601375043</a>
+                            <span class="r-product-price">¥ 359.90</span>
+                        </div>
+                                    <div class="R-sku">
+                            <a href="https://www.ehsy.com/product-MGE654" title="东成角向磨光机，1200W11800r/min，125mm盘径，S1M-FF02-125B" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2017/12/04/20171204151933611_M.jpg" alt="东成角向磨光机，1200W11800r/min，125mm盘径，S1M-FF02-125B">
+                            </a>
+                            <a class="r-product-name" href="https://www.ehsy.com/product-MGE654" title="东成角向磨光机，1200W11800r/min，125mm盘径，S1M-FF02-125B" target="_blank">东成角向磨光机，1200W11800r/min，125mm盘径，S1M-FF02-125B</a>
+                            <span class="r-product-price">¥ 302.90</span>
+                        </div>
+                                    <div class="R-sku">
+                            <a href="https://www.ehsy.com/product-MAV143" title="施耐德Schneider 微型断路器 iC65N(A9) 1P 16A C型 A9F18116" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2019/07/02/20190702163458822_M.jpg" alt="施耐德Schneider 微型断路器 iC65N(A9) 1P 16A C型 A9F18116">
+                            </a>
+                            <a class="r-product-name" href="https://www.ehsy.com/product-MAV143" title="施耐德Schneider 微型断路器 iC65N(A9) 1P 16A C型 A9F18116" target="_blank">施耐德Schneider 微型断路器 iC65N(A9) 1P 16A C型 A9F18116</a>
+                            <span class="r-product-price">¥ 25.99</span>
+                        </div>
+                                    <div class="R-sku">
+                            <a href="https://www.ehsy.com/product-MCY219" title="得力 订书针，10＃0010（10盒/包） 单位：盒" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2018/03/07/20180307163313023.jpg" alt="得力 订书针，10＃0010（10盒/包） 单位：盒">
+                            </a>
+                            <a class="r-product-name" href="https://www.ehsy.com/product-MCY219" title="得力 订书针，10＃0010（10盒/包） 单位：盒" target="_blank">得力 订书针，10＃0010（10盒/包） 单位：盒</a>
+                            <span class="r-product-price">¥ 0.69</span>
+                        </div>
+                                    <div class="R-sku">
+                            <a href="https://www.ehsy.com/product-LAA369" title="亚西 生物储存容器，容积：30L，防锈铝合金材质，YDS-30" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2016/12/23/20161223115038098_M.jpg" alt="亚西 生物储存容器，容积：30L，防锈铝合金材质，YDS-30">
+                            </a>
+                            <a class="r-product-name" href="https://www.ehsy.com/product-LAA369" title="亚西 生物储存容器，容积：30L，防锈铝合金材质，YDS-30" target="_blank">亚西 生物储存容器，容积：30L，防锈铝合金材质，YDS-30</a>
+                            <span class="r-product-price">¥ 2779.00</span>
+                        </div>
+                    </div>
+                   <div class="recommend-list r-new-products clearfix js-tabs-content js-tabs-new" style="display:none;">
+                                    <div class="R-sku">
+                            <a href="https://www.ehsy.com/product-DDN646" title="（限河南区域）卡箍法兰 DN150" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2020/08/17/20200817174715752_M.jpg" alt="（限河南区域）卡箍法兰 DN150">
+                            </a>
+                            <a class="r-product-name" href="https://www.ehsy.com/product-DDN646" title="（限河南区域）卡箍法兰 DN150" target="_blank">（限河南区域）卡箍法兰 DN150</a>
+                            <span class="r-product-price">¥ 40.44</span>
+                        </div>
+                                    <div class="R-sku">
+                            <a href="https://www.ehsy.com/product-DDN645" title="（限河南区域）卡箍式弯头90° DN100" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2020/08/17/20200817174747256_M.jpg" alt="（限河南区域）卡箍式弯头90° DN100">
+                            </a>
+                            <a class="r-product-name" href="https://www.ehsy.com/product-DDN645" title="（限河南区域）卡箍式弯头90° DN100" target="_blank">（限河南区域）卡箍式弯头90° DN100</a>
+                            <span class="r-product-price">¥ 23.96</span>
+                        </div>
+                                    <div class="R-sku">
+                            <a href="https://www.ehsy.com/product-DDN644" title="（限河南区域）卡箍DN150" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2020/08/17/20200817174815235_M.jpg" alt="（限河南区域）卡箍DN150">
+                            </a>
+                            <a class="r-product-name" href="https://www.ehsy.com/product-DDN644" title="（限河南区域）卡箍DN150" target="_blank">（限河南区域）卡箍DN150</a>
+                            <span class="r-product-price">¥ 21.10</span>
+                        </div>
+                                    <div class="R-sku">
+                            <a href="https://www.ehsy.com/product-DDN643" title="（限河南区域）卡箍式变径三通 DN150*DN100*DN150" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2020/08/17/20200817174837915_M.jpg" alt="（限河南区域）卡箍式变径三通 DN150*DN100*DN150">
+                            </a>
+                            <a class="r-product-name" href="https://www.ehsy.com/product-DDN643" title="（限河南区域）卡箍式变径三通 DN150*DN100*DN150" target="_blank">（限河南区域）卡箍式变径三通 DN150*DN100*DN150</a>
+                            <span class="r-product-price">¥ 57.03</span>
+                        </div>
+                                    <div class="R-sku">
+                            <a href="https://www.ehsy.com/product-DDN642" title="（限河南区域）卡箍式等径三通 DN100" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2020/08/17/20200817174853660_M.jpg" alt="（限河南区域）卡箍式等径三通 DN100">
+                            </a>
+                            <a class="r-product-name" href="https://www.ehsy.com/product-DDN642" title="（限河南区域）卡箍式等径三通 DN100" target="_blank">（限河南区域）卡箍式等径三通 DN100</a>
+                            <span class="r-product-price">¥ 28.90</span>
+                        </div>
+                                    <div class="R-sku">
+                            <a href="https://www.ehsy.com/product-DDN641" title="（限河南区域）镀锌钢管 DN100X4" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2020/08/17/20200817174944115_M.jpg" alt="（限河南区域）镀锌钢管 DN100X4">
+                            </a>
+                            <a class="r-product-name" href="https://www.ehsy.com/product-DDN641" title="（限河南区域）镀锌钢管 DN100X4" target="_blank">（限河南区域）镀锌钢管 DN100X4</a>
+                            <span class="r-product-price">¥ 82.42</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="layout-keywords">
+              <div class="extra-links">
+               <span>您是不是想找：</span>
+                <a href="https://www.ehsy.com/lexicon/brand/27051">综合套装品牌</a>
+                <a href="https://www.ehsy.com/lexicon/image/27052">土壤采样器综合套装图片</a>
+                <a href="https://www.ehsy.com/lexicon/price/27053">撞击式空气微生物采样器综合套装价格</a>
+                <a href="https://www.ehsy.com/lexicon/image/27054">空气微生物采样器综合套装图片</a>
+                <a href="https://www.ehsy.com/lexicon/image/27055">采样器综合套装图片</a>
+                <a href="https://www.ehsy.com/lexicon/brand/27056">大气采样器综合套装品牌</a>
+                <a href="https://www.ehsy.com/lexicon/params/27057">水质采样器综合套装规格型号</a>
+                <a href="https://www.ehsy.com/lexicon/price/27058">粉尘采样器综合套装价格</a>
+                <a href="https://www.ehsy.com/lexicon/price/27059">地理综合实践套装价格</a>
+                <a href="https://www.ehsy.com/lexicon/price/27060">ot综合训练套装价格</a>
+              </div>
+            </div> 
+        </div>
+        <div class="layout-footer-content">
+            <div class="footer-box">
+                <div class="footer-a-bd">
+                    <div>
+                        <i class="icon-slogans-01"></i>
+                        <span class="footer-a-span">正品行货</span>
+                        <span class="footer-b-span">品类齐全</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <i class="icon-slogans-02"></i>
+                        <span class="footer-a-span">多仓直发</span>
+                        <span class="footer-b-span">货期保证</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <i class="icon-slogans-03"></i>
+                        <span class="footer-a-span">会员特折</span>
+                        <span class="footer-b-span">满额包邮</span>
+                    </div>
+                    <div style="text-align: right;">
+                        <i class="icon-slogans-04"></i>
+                        <span class="footer-a-span">阳光采购</span>
+                        <span class="footer-b-span">一站服务</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-b">
+                <div class="footer-b-bd">
+                    <ul class="foot-help clearfix">
+                        <li class="footer-b-li">
+                            <div class="footer-b-li-title">西域</div>
+                            <ul>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/about">走进西域</a></li>
+                                <li><a rel="external nofollow" href="http://www.mdsin.com" hidden="hidden">麦森医疗</a></li>
+                                <li><a rel="external nofollow" href="http://www.ehssafety.com" hidden="hidden">怡海森工程</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-b-li">
+                            <div class="footer-b-li-title">业务合作</div>
+                            <ul>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/mro">客户MRO整合方案</a></li>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/supplier">供应商合作</a></li>
+                                <li><a rel="external nofollow" href="http://yc.yonyou.com/yuncai/" target="_blank">友云采</a></li>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/anti_fraud" target="_blank">反舞弊及举报</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-b-li">
+                            <div class="footer-b-li-title">客服中心</div>
+                            <ul>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/faq">常见问题</a></li>
+                            </ul>
+                        </li>	
+                        <li class="footer-b-li">
+                            <div class="footer-b-li-title">帮助中心</div>
+                            <ul>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/help_center/c-2">注册/登录</a></li>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/help_center/c-3">账户管理</a></li>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/help_center/c-4">购物流程</a></li>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/help_center/c-5">售后服务</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-b-li-2">
+                            <div class="foot-phone clearfix">
+                                <img class="footer-wx" alt="西域-MRO工业品|MRO供应商|MRO整合|MRO领导者—西域-一站式MRO工业品现货交易平台-微信|微信平台" src="../images/footer-right-01.png">
+                                <div>
+                                    <div class="foot-phone-1" style="line-height:14px">400-821-8800</div>
+                                    <div class="foot-phone-2"><span style="font-size: 14px;font-family: 'Hiragino Sans GB', 微软雅黑, sans-serif;">售后热线：</span>400-885-8833</div>
+                                </div>
+                            </div>
+                            <div class="foot-phone-remark clearfix" style="font-size:12px;margin-bottom: 10px;">工作时间 周一到周五（9:00-18:00）</div>
+                            <div class="foot-download clearfix">
+                                <div>
+                                    <img alt="" src="../images/footer-wechat.png">
+                                    <span>微信：西域供应链</span>
+                                </div>
+                                <div>
+                                    <img alt="" src="../images/footer-app.png">
+                                    <span style="padding-left: 19px;">APP：西域</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                                            <div class="copyright-ul">
+                        其他链接：
+                        <a rel="external nofollow" href="https://www.ehsy.com/about">关于我们</a>
+                        <span>|</span>
+                        <a rel="external nofollow " href="https://www.ehsy.com/statement">法律声明</a>
+                        <span>|</span>
+                        <a rel="external nofollow " href="https://www.ehsy.com/investment">投资洽谈</a>
+                        <span>|</span>
+                        <a rel="external nofollow " href="https://www.ehsy.com/contact">联系我们</a>
+                        <span>|</span>
+                        <a rel="external nofollow " href="https://www.ehsy.com/agreement">服务协议</a>
+                        <span>|</span>
+                        <a rel="external nofollow " href="https://www.ehsy.com/privacy">隐私声明</a>
+                        <span>|</span>
+                        <a rel="external nofollow " href="https://www.ehsy.com/copyright">版权声明</a>
+                        <span>|</span>
+                        <a href="https://www.ehsy.com/category/list">网站地图</a>
+                        <span>|</span>
+                        <a href="https://www.ehsy.com/yiyao">药品信息专栏</a>
+                        <span>|</span>
+                        <a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">沪ICP备09003861号</a>
+                    </div>
+                    <div class="copyright-state"></div>
+                    <div class="credit-bar">
+                        <a rel="nofollow" href="#" target="_blank"><img src="../images/footer-web-03.png"></a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div> 
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502008645" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <img src="../images/beian.png" style="float:left;">
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011502008645号</p>
+            </a>
+        </div>
+        <div class="layout-right-bar">
+            <div class="ehsy-sidebar">
+                <div class="ehsy-sidebar-tabs">
+                                <div class="sidebar-tabs-uc" id="js-rb-account"><div><a rel="nofollow" onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/index');"><i class="icon-right-bar icon-rb-account"></i></a></div>
+                    </div>
+                                <div class="sidebar-tabs-car"><div><a rel="nofollow" href="https://www.ehsy.com/index.php?route=checkout/cart"><i class="icon-right-bar icon-rb-cart"></i><div class="sider_cart_num js-cart-num">0</div></a></div>
+                    </div>
+                    <div class="sidebar-tabs-collection" id="js-rb-collection"><div><a rel="nofollow" onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/favorite');"><i class="icon-right-bar icon-rb-collection"></i></a></div>
+                    </div>
+                    <div><div id="nb_icon_wrap_qiye_new"><a href="http://q.url.cn/cdT6L9?_type=wpa&amp;qidian=true" target="_blank"><img src="../images/service.gif"></a></div></div>
+                </div>
+                <div class="ehsy-sidebar-footer" style="display: block;"><i class="icon-right-bar icon-rb-top" style="display: block;"></i><span style="display: none;">回到顶部</span></div>
+            </div>
+        </div>
+        <div id="js-top-fix-bar" class="nav-thumbnail-container" style="display: none;">
+            <div class="nav-logo">
+                <div class="index-logo">
+                    <a title="西域商城" href="https://www.ehsy.com/"><img alt="西域商城" src="../images/icon-logo.png"></a>
+                </div>
+            </div>    
+            <div class="nav-menu menu">
+    
+                    <div class="menu-all nav-menu-all js-menu-fix-top">
+                        <div class="nav-menu-title-div menu-title-div">
+                            <a>
+                               <span class="menu-all-span nav-menu-all-span">全部商品分类</span>
+                               <span class="menu-right nav-menu-right nav-menu-chevron-down js-menu-arrow"></span>
+                            </a>
+                        </div>
+                        <div class="menu-fix-content js-menu-clone-box">
+                        
+                        </div>
+                    </div>
+            </div>
+            <div class="index-search-div nav-index-search-div">
+                <div class="js-fix-bar-search">    
+    <div class="layout-search search-wrap" id="globalSearchDiv" data-url="category/result">
+        <div class="glob-search-input-div">
+            <i class="icon-camera tooltip" onclick="modalShow();">
+                <span class="tooltiptext">上传图片&nbsp;/&nbsp;搜索相关产品</span>
+            </i>
+            <input class="glob-search-input" placeholder="请输入产品名称 品牌 型号 SKU号 或CAS号" type="text" name="search" value="" autocomplete="off">
+        </div>
+        <div class="glob-search-submit btn-search" url="https://www.ehsy.com/search">搜索</div>
+    
+        <div class="user-photo-box" style="display: none">
+            <img id="user-photo" src="">
+        </div>
+    
+    
+        <i class="icon-search"></i>
+        <ul class="hot-word">
+            </ul>
+    </div>
+    
+    <div class="search-pic" style="display: none;">
+        <div class="modal fade" id="changeModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="modalHide();">×</button>
+                        <h4 class="modal-title text-primary text-center">
+                            <i class="fa fa-pencil"></i>
+                            图片裁剪
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="tip-info text-center">
+                            未选择图片
+                        </p>
+                        <div class="cropper-content hidden">
+                            <div class="cropper-div">
+                                <img id="tailoringImg">
+                            </div>
+                            <p class="cropper-hint">注：透明背景部分默认填充白色</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <label class="btn btn-danger pull-left" title="上传图片">
+                            <input type="file" class="sr-only" id="chooseImg" onchange="selectImg(this)" accept="image/*">
+                            <span>打开图片</span>
+                        </label>
+                        <button class="btn btn-primary disabled" disabled="true" onclick="sendPhoto(this);" data-action="https://www.ehsy.com/index.php?route=search/pic_result">确认选区</button>
+                        <button class="btn btn-close" aria-hidden="true" onclick="modalHide();">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-backdrop" onclick="modalHide();"></div>
+    </div>  
+              </div>
+                <div class="nav-my-ehsy-show">
+                    <div class="nav-ehsy-a">
+                        <a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/index');" rel="external nofollow" class="js-myehsy" style="font-size:14px;"><i class="icon-header-bar icon-header-bar-my"></i>我的西域</a>
+                        <div class="nav-my-ehsy js-myehsy-box"><div class="my-ehsy js-clone-myehsy">
+                    <ul>
+                                        <div class="orders">
+                            <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order');"><i class="icon-header-bar icon-header-bar-my-1-1"></i>我的订单</a></li>
+                            <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_pay');"><i class="icon-header-bar icon-header-bar-my-2-1"></i>待付款</a></li>
+                            <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_take');"><i class="icon-header-bar icon-header-bar-my-3-1"></i>待收货</a></li>
+                        </div>
+                            <div class="orders">
+                                <li class="header-my-collection"><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/favorite');"><i class="icon-header-bar icon-header-bar-my-1-2"></i>我的收藏</a></li>
+                                <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/mycoupon');"><i class="icon-header-bar icon-header-bar-my-2-2"></i>我的优惠券</a></li>
+                                <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_after');"><i class="icon-header-bar icon-header-bar-my-3-2"></i>售后</a></li>
+                            </div>
+                            <div class="orders">
+                                <!-- <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/free_inquiry');"><i class="icon-header-bar icon-header-bar-my-1-3"></i>我的询价</a></li> -->
+                                <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/quotation');"><i class="icon-header-bar icon-header-bar-my-2-3"></i>我的报价单</a></li>
+                                <li class="header-my-consultant"><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/ask');"><i class="icon-header-bar icon-header-bar-my-3-3"></i>我的咨询</a></li>
+                            </div>
+    
+                     </ul>
+                      </div></div>
+                      </div>
+                </div>
+                <div class="s-carts layout-mini-cart js-mini-cart js-fix-mini-cart">
+                    <span class="cart-text-before"><a rel="external nofollow" href="https://www.ehsy.com/index.php?route=checkout/cart" class="s-carts-text"><i class="sprite-tools_cart"></i>我的购物车</a></span>
+                    <a rel="external nofollow" href="https://www.ehsy.com/index.php?route=checkout/cart" class="s-carts-text"><span class="cart-num cart-num-cover js-cart-num">0</span></a>
+                </div>
+            </div>
+            <div id="nb_icon_wrap_service" class="service-gif js-proxy-qqChat">
+                <a href="http://q.url.cn/cdT6L9?_type=wpa&amp;qidian=true" target="_blank"><img src="../images/servicegif.gif"> <span>在线客服</span></a>
+                
+            </div>
+        </div>
+        <script src="../lib/jquery-1.12.4.js"></script>
+        <script src="../js/public.js"></script>
+       
+        <script src="../js/lianbiao.js"></script>
+        
+            <script>
+            //顶部隐藏
+var jsTopfixbar=document.getElementById("js-top-fix-bar")
+var  ehsySidebarfooter=document.getElementsByClassName( 'ehsy-side-bar-footer')[0]
+ window.onscroll=function(){
+    var scrollTop = getScroll().top;
+    console.log(scrollTop)
+    if(scrollTop<=200){
+        ehsySidebarfooter.style.display="none"
+        jsTopfixbar.style.display="none"      
+    }
+     if(600>scrollTop>200){
+        ehsySidebarfooter.style.display="block"
+     }
+      if(scrollTop>=600){
+        ehsySidebarfooter.style.display="block"
+        jsTopfixbar.style.display="block"
+    }
+        if(scrollTop<=600){
+        ehsySidebarfooter.style.display="block"
+        jsTopfixbar.style.display="none"
+    }      
+} ;
+function getScroll(){
+    return {
+        left:document.body.scrollLeft||document.documentElement.scrollLeft,
+        top:document.body.scrollTop||document.documentElement.scrollTop
+    }
+};
+//右边的隐藏
+var ehsySidebarfooter=document.getElementsByClassName("ehsy-sidebar-footer")[0]
+var span3=ehsySidebarfooter.children[1]
+var i1=ehsySidebarfooter.children[0]
+ehsySidebarfooter.onmouseenter=function(){
+    i1.style.display="none"
+    span3.style.display="block"
+};
+ehsySidebarfooter.onmouseleave=function(){
+    i1.style.display="block"
+    span3.style.display="none"
+};
+ehsySidebarfooter.onclick=function(){
+    //document.documentElement.scrollTop=0
+    $('html').animate({
+        scrollTop:0
+    },1000,'linear')
+};
+//购物车移入移出
+var headerGou=document.getElementsByClassName("header-gou")[0]
+//点击它,从商品详情页跳转到购物车页面
+headerGou.onclick=function(){
+    location.href="./gouwuche.html"
+};
+var cartWrap=headerGou.children[0]
+var headerGou1=headerGou.children[1]
+cartWrap.onmouseenter=function(){
+    headerGou1.style.display="block"
+};
+cartWrap.onmouseleave=function(){
+    headerGou1.style.display="none"
+};
+cartWrap.onclick=function(){
+    location.href="./gouwuche.html"
+};
+//相机的移入移出
+var iconCamera=document.getElementsByClassName("icon-camera")[0]
+var tooltiptext=document.getElementsByClassName("tooltiptext")[0]
+iconCamera.onmouseenter=function(){
+    tooltiptext.style.display="block"
+}
+iconCamera.onmouseleave=function(){
+    tooltiptext.style.display="none"
+}
+/* */          
+$.ajax({
+    url:'../pages/date1.json',
+    dataType:'json'
+})
+.then(res=>{
+    //res就是获取到的轮播图的数据
+    // 第二步:格式化数据(返回的数据刚好合用,不用再次格式化)
+    // 第三步:把数据渲染到响应的容器里面
+    var row=document.querySelector('.product-list')
+    var str=''
+    console.log(res)
+       res.forEach(function(item){  
+         str+=`  
+         <div class="product" data-text="${item.order}">   
+         <a href="${item.href}" target="_blank" title="史丹利 21件套6.3MM公英制组套，89-507-22">
+             <div class="p-image">
+                 <div class="image-div">
+                    <img src="${item.img}" alt="史丹利 21件套6.3MM公英制组套，89-507-22">
+                </div>
+             </div>
+         </a>
+         <div class="p-name">
+             <a href="${item.href}" title="史丹利 21件套6.3MM公英制组套，89-507-22" target="_blank">
+               <span class="high-light">${item.name}</span>
+              <p class="ellipsis-ex">...</p>
+             </a>
+         </div>
+         <div class="order ell">
+             <span class="color-999">西域订货号：</span>
+             <span>${item.order}</span>
+         </div>
+         <ul class="product-parameter">
+             <li class="high-light" style="width:124.83333333333px">
+                ${item.品牌}
+            </li>
+             <li style="width:124.83333333333px">${item.型号}</li>
+             <li style="width:124.83333333333px">${item.组件套数}</li>
+             <li style="width:124.83333333333px">${item.扳手}</li>                       
+             <li style="width:124.83333333333px">
+                 <span class="now_money" title="">
+                     <span class="yen" style="font-size: 12px;">
+                     ${item.西域价}
+                     </span>                               
+                 </span>
+                 <br>
+             </li>
+             <li style="width:124.83333333333px">
+                 <span class="stock" data="0">${item.预计出货日}</span><br>
+            </li>
+         </ul>       
+         <div class="purchase-num">
+             <a class="a-sub disable-sub">-</a>
+             <input class="purchaseCount js-list-product-quantity" max-number="99999" value="" data-val="1" onfocus="this.value=this.value<1 ? 1:this.value;this.select()" onkeyup="this.value=this.value.replace(/[^\d]/,'');this.value=this.value.replace(/^0{1}/g,'1');if(this.value>99999){this.value=99999}" type="text" sku_code="RAS230">
+             <a class="a-add">+</a>
+             <span class="purchase-unit">套</span>
+             <span class="purchase-count-clear icon-product-list-clear"></span>
+         </div>                
+       </div>`
+       })  
+     row.innerHTML=str;
+})
+
+
+
+                
+      
+        </script>    
+</body>
+</html>

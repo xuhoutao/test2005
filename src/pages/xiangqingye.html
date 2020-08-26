@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/home7.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+</head>
+<body>
+    <div class=" header">
+        <div class="header-bar">
+            <div class="header-bar1 container">
+               <div class="header-left">
+                <a class="fl">登录</a>
+                <span>|</span>
+                <a  class="fl" href="#">免费注册</a>
+                     <span>|</span>
+                     <a  class="fl" href="https://www.ehsy.com/help_center/first">帮助中心</a>
+              </div>
+              <div class="header-right">
+                <div class="right-bar">
+                    <a class="fr js-proxy-qqChat" href="http://q.url.cn/cdT6L9?_type=wpa&qidian=true" target="_blank"><i class="iconfont icon-kefu icon-header-bar-help"></i>在线客服</a>
+                    <li class="fr">|</li>
+                            <span rel="external nofollow" class="fr" ><i class="iconfont icon-dianhua icon-header-bar-help"></i><span class="text-earphone">400-821-8800</span></span>
+                            <li class="fr">|</li>
+                    <li class="fr mobile-show">
+                        <a rel="external nofollow" class="mobile-ahref">
+                            <i class="iconfont icon-shouji icon-header-bar-help"></i>手机西域
+                            <i class="iconfont icon-jiantou icon-header-bar1-help"></i>
+                        </a>
+                        <div class="mobile-ehsy-download">
+                            <img style="width: 130px;height: 130px;" src="../images/code-app.png" class="mobile-code" alt="手机西域下载二维码">
+                            <div class="saoyisao">扫一扫,下载西域客户端</div>
+                            <div class="shoujigouwu">手机采购 移动办公</div>
+                            <a rel="external nofollow" href="https://itunes.apple.com/cn/app/id1063629472?mt=8" target="_blank">
+                                <i class="iconfont icon-shezhi icon-header-bar-code-help"></i>
+                            </a>
+                            <a rel="external nofollow" href="https://itunes.apple.com/cn/app/id1063629472?mt=8" target="_blank">
+                                <span class="mo-ios-span">iPhone</span>
+                            </a>
+                            <a rel="external nofollow" href="http://static-c.ehsy.com/www/files/ehsy.apk">
+                                <i class="iconfont icon-jiantou icon-header-bar-code-help"></i>
+                            </a>
+                            <a href="http://static-c.ehsy.com/www/files/ehsy.apk">
+                                <span class="mo-android-span">Android</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="fr">|</li>
+                    <a rel="external nofollow" class="fr" href="https://www.ehsy.com/index.php?route=quick/cart">快速下单</a>
+                            <li class="fr">|</li>		
+                    <li class="fr my-ehsy-show">
+                        <a class="ehsy-a" onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/index');" rel="external nofollow">
+                            <i class="iconfont icon-shezhi icon-header-bar-help"></i>我的西域
+                            <i class="iconfont icon-jiantou icon-header-bar1-help"></i>
+                        </a>
+                        <div class="my-ehsy js-clone-myehsy">
+                            <ul>
+                                                <div class="orders">
+                                    <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order');"><i class="iconfont icon-dingdan icon-header-bar-my-1-1"></i>我的订单</a></li>
+                                    <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_pay');"><i class="iconfont icon-daifukuan icon-header-bar-my-2-1"></i>待付款</a></li>
+                                    <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_take');"><i class="iconfont icon-shouhuo icon-header-bar-my-3-1"></i>待收货</a></li>
+                                </div>
+                                    <div class="orders">
+                                        <li class="header-my-collection"><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/favorite');"><i class="iconfont icon-shoucang icon-header-bar-my-1-2"></i>我的收藏</a></li>
+                                        <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/mycoupon');"><i class="iconfont icon-youhui icon-header-bar-my-2-2"></i>我的优惠券</a></li>
+                                        <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_after');"><i class="iconfont icon-shouhou icon-header-bar-my-3-2"></i>售后</a></li>
+                                    </div>
+                                    <div class="orders">
+                                        <!-- <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/free_inquiry');"><i class="icon-header-bar icon-header-bar-my-1-3"></i>我的询价</a></li> -->
+                                        <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/quotation');"><i class="iconfont icon-pajia icon-header-bar-my-2-3"></i>我的报价单</a></li>
+                                        <li class="header-my-consultant"><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/ask');"><i class="iconfont icon-zixun icon-header-bar-my-3-3"></i>我的咨询</a></li>
+                                    </div>
+            
+                              </ul>
+                        </div>
+                    </li>
+                    <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+         </div>
+         <div class="header-car">
+            <div class="header-logo">
+                <div class="header-logo1">
+                 <a href="https://www.ehsy.com/" title="西域网">
+                     <img src="../images/logo.png" alt="西域网" style="max-width:264px; max-height:48px;">
+                  </a>
+                </div>
+            </div>
+            <div class="header-cen">
+               <i class="icon-camera onclick=" modalshow();>
+                 <span class="tooltiptext" style="display: none;">上传图片&nbsp;/&nbsp;搜索相关产品</span>
+             </i> 
+             <input class="header-cen-input" placeholder="请输入产品名称 品牌 型号 SKU号 或CAS号" type="text" name="search" value="" autocomplete="off">
+             <div class="header-cen-submit btn-search" url="https://www.ehsy.com/search">搜索</div>
+             <ul class="hot-word">
+                 <li><a target="_blank" class="first-link" href="https://www.ehsy.com/activity/pc-FHDX">雨季防洪度汛产品推荐</a></li>
+                 <li><a target="_blank" class="first-link" href="https://www.ehsy.com/activity/pc-repertork">防暑攻略必备</a></li>
+             </ul>
+            </div>
+            <div class="header-gou">
+               <a rel="external nofollow" class="cart-wrap" href="#">
+                 <i></i>
+                 <span class="text">我的购物车</span>
+                 <span class="cart-num"> <span class="text-cart-count">0</span> </span>
+               </a>
+               <div class="header-gou-1">
+                 <span class="carts-empty-text">购物车中还没有商品，赶快选购吧！</span>
+               </div>
+            </div>
+         </div>
+    </div>
+    <div class="content-menu">
+        <div class="menu-t">
+        <div class="menu-bn">
+            <div class="menu-all">
+                <div class="menu-box">
+                    <span class="menu-box-span">
+                        <i class="iconfont icon-caidan sprite-list"></i>全部商品分类</span>
+                </div>
+            </div>
+         </div>
+        </div>
+        <div class="menu-body">
+        <ul>
+            <li style="width: 48px;"><a href="https://www.ehsy.com/">首页</a></li>
+
+            <li class="menu-hot" style="width: 143px;margin-left: 0;"><a rel="nofollow" href="/activity/pc-Raxwell">Raxwell专区 
+            <img src="../images/shape.png" alt=""></a></li>
+            <li class="menu-hot"><a rel="nofollow" href="https://www.ehsy.com/index.php?route=search/result/hasstock">现货专区</a>
+
+            </li>
+            <li style="width: 110px;margin-right: 0;"><a href="https://eis.ehsy.com/">西域工业品集采</a></li>
+
+            <li style="margin-right: 0;"><a href="https://www.ehsy.com/brand/list">品牌中心</a></li>
+                        <li><a rel="nofollow" href="https://www.ehsy.com/about">走进西域</a></li>
+            <li><a rel="nofollow" href="https://www.ehsy.com/supplier">供应商合作</a></li>
+            <div class="clear"></div>
+        </ul>
+        </div>
+    </div>
+    <div class="layout-product-info">
+        <div class="crumbs">
+            <script>
+                // datatist data info
+                var datatistinfo = {
+                    crumb : '',
+                    sku_code : 'MGE654',
+                    product_name : '东成角向磨光机，1200W11800r/min，125mm盘径，S1M-FF02-125B',
+                    market_price : '302.9',
+                    sale_price   : '302.9',
+                    category_last : ''
+                }
+            </script>
+            <a href="https://www.ehsy.com/">首页</a><span>&gt;</span>
+                    <span><a href="https://www.ehsy.com/tools">工具</a><span>&gt;</span></span>
+            <script>
+                if (datatistinfo) datatistinfo.crumb += ("工具" + ">");
+            </script>
+                            <span><a href="https://www.ehsy.com/category-27">电动工具</a><span>&gt;</span></span>
+            <script>
+                if (datatistinfo) datatistinfo.crumb += ("电动工具" + ">");
+            </script>
+                            <span><a href="https://www.ehsy.com/category-1224">角磨机/抛光机</a><span>&gt;</span></span>
+            <script>
+                if (datatistinfo) datatistinfo.crumb += ("角磨机/抛光机" + ">");
+            </script>
+                    <script>
+                if (datatistinfo) datatistinfo.category_last = "角磨机/抛光机";
+            </script>
+                            <a>东成角向磨光机，1200W11800r/min，125mm盘径，S1M-FF02-125B</a> 
+        </div> 
+        <div class="product-info" style="position:relative;">
+             <div class="product-zoom">
+                <div class="pic-zoom fl" style="height:422px;">
+                   <div clas="pic-zoom-big">
+                                     <a href="https://image-c.ehsy.com/uploadfile/opc/img/2017/12/04/20171204151933611.jpg" class="jqzoom" rel="gal1" title="" style="outline-style: none; text-decoration: none;">
+                          <div class="zoomPad"><img src="https://image-c.ehsy.com/uploadfile/opc/img/2017/12/04/20171204151933611_M.jpg" title="" width="350" height="350" style="opacity: 1;"><div class="zoomPup" style="top: 84px; left: 82.5px; width: 183px; height: 180px; position: absolute; border-width: 1px; display: none;"></div><div class="zoomWindow" style="position: absolute; z-index: 5001; left: 360px; top: 0px; display: none;"><div class="zoomWrapper" style="width: 420px;"><div class="zoomWrapperImage" style="width: 100%; height: 420px;"><img style="position: absolute; border: 0px; display: block; left: -190.857px; top: -197.443px;" src="https://image-c.ehsy.com/uploadfile/opc/img/2017/12/04/20171204151933611.jpg"></div></div></div><div class="zoomPreload" style="visibility: hidden; top: 153.5px; left: 130px; position: absolute;">Loading</div></div>
+                      </a>
+                    </div>
+                    <div class="pic-zoom-list">				
+                        <div class="slider" id="slider" style="position: relative;">
+                            <div class="slider-ul js-ul">
+                            <ul class="clearfix pic-small-list sliderbox" style="width: 320px; left: 0px;">
+                                                          <li class="current" style="float: left;"><a class="zoomThumbActive" href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: 'https://image-c.ehsy.com/uploadfile/opc/img/2017/12/04/20171204151933611_M.jpg',largeimage: 'https://image-c.ehsy.com/uploadfile/opc/img/2017/12/04/20171204151933611.jpg'}"><img src="https://image-c.ehsy.com/uploadfile/opc/img/2017/12/04/20171204151933611_S.jpg"></a></li>
+                            </ul>
+                            </div>
+                            <div class="prev" style="display: none;"><i class="icon-slide-arrow icon-slide-arrow-left"></i></div>
+                            <div class="next" style="display: none;"><i class="icon-slide-arrow icon-slide-arrow-right"></i></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                </div>
+    
+                <div class="collectOption">
+                    <span class="js-favorite-btn-for-detail js-favorite-MGE654">
+                                    <a class="collect-product ev-collect" onclick="add_favorite('MGE654');" style="cursor:pointer;"><i class="icon-product-info icon-product-info-collect"></i><span>收藏宝贝</span></a>	
+                                    </span>
+                                
+                                                    <div class="bdsharebuttonbox bdshare-button-style1-16" style="display: inline-block;margin-left: 5px;vertical-align: middle">
+                        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                        <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                    </div>
+                   
+                                </div>
+            </div>
+            <div class="product-info-detail">
+                <h1 title="东成角向磨光机，1200W11800r/min，125mm盘径，S1M-FF02-125B">东成角向磨光机，1200W11800r/min，125mm盘径，S1M-FF02-125B</h1>
+                <div class="price clearfix">
+                                    <div class="line-price">
+                        <span>西域价：</span>
+                        <span class="show-price">¥ 302.90</span>
+                        <span class="orgin">/ 台</span>
+                                                                    <span class="color:#999;">&nbsp;&nbsp;&nbsp;未税价：</span>
+                            <span class="orgin">¥ 268.05&nbsp;&nbsp;(税率：13%)</span>
+                                        </div>
+                                    
+                                </div>
+                <div class="product-info-detail-other">
+                    <div class="attr-title" style="position:relative;">
+                        <span class="style-description">西域订货号</span>
+                        <span class="style-seperator">：</span>
+                        <span>MGE654</span>
+                    </div>
+                    <div class="attr-title" style="height: auto;min-height: 30px;">
+                        <span class="style-description">品牌型号</span>
+                        <span class="style-seperator">：</span>
+                        <span>东成 S1M-FF02-125B</span>
+                    </div>
+                    <div class="attr-title">
+                            <span class="style-description">库存</span>
+                            <span class="style-seperator">：</span>
+                            <span class="stock" data="4">有库存</span>
+                                                    <i class="icon-product icon-product-mini-today"></i>
+                                                    <a class="delivery-time-tips" href="https://www.ehsy.com/delivery" target="_blank" ref="nofollow">出货及送达时效说明 &gt;&gt;</a>
+                    </div>
+                   <div class="attr-title">
+                        <span class="style-description">最小订货量</span>
+                        <span class="style-seperator">：</span>
+                        <span>1台</span>
+                    </div>
+                    <div class="add-to-cart">
+                        <div class="buyCountValue clearfix">
+                            <input class="item-num-input" value="1" orinum="1" id="info_MGE654_quantity" name="qty[MGE654]" onblur="this.value=this.value.replace(/[^\d]/,'');this.value=this.value.replace(/^0{1}/g,'1');if(this.value>99999){this.value=99999}else if(this.value<1){this.value='1'}">
+                            <div class="adjust-button">
+                                <a class="a-add" onclick="fn4(this)">+</a>
+                                <a class="a-sub" onclick="fn5(this)" >-</a>
+                            </div>
+                            <a class="add-to-cart-btn js-product-info-add-cart" sku_code="MGE654"><i class="icon-product-info icon-product-info-addcart"></i>加入购物车</a>
+                        </div>
+                    </div>                  
+                    <div class="payment">
+                        <span class="pay-title">支付方式：</span>
+                                            <span class="pay-method"><i class="icon-product-info icon-product-info-payway-1"></i> <span class="tip">支付宝转账</span></span>
+                                            <span class="pay-method"><i class="icon-product-info icon-product-info-payway-2"></i> <span class="tip">微信转账</span></span>
+                                            <span class="pay-method"><i class="icon-product-info icon-product-info-payway-0"></i> <span class="tip">线下转账</span></span>
+                                            <span class="pay-method"><i class="icon-product-info icon-product-info-payway-99"></i> <span class="tip">账期付款</span></span>
+                     </div>
+                </div>
+            </div>
+            <div class="product-brand">
+                                <div class="banner">
+                        <a class="banner-image" href="https://www.ehsy.com/brand-1547">
+                            <img src="https://image-c.ehsy.com/uploadfile/opc/img/2016/11/24/20161124092801062.jpg" alt="东成" title="东成">
+                        </a>
+                        <a class="banner-name" href="https://www.ehsy.com/brand-1547">东成</a>
+                    </div>
+                            <div class="special">
+                    <span class="title">西域特色</span>
+                    <ul class="wrap">
+                                            <li>
+                            <i class="icon-product-info icon-product-info-ts-1"></i>
+                            <span>正品行货</span>
+                            <span>品类齐全</span>
+                        </li>
+                                            <li>
+                            <i class="icon-product-info icon-product-info-ts-2"></i>
+                            <span>多仓直发</span>
+                            <span>货期保证</span>
+                        </li>
+                                            <li>
+                            <i class="icon-product-info icon-product-info-ts-3"></i>
+                            <span>会员特折</span>
+                            <span>满额包邮</span>
+                        </li>
+                                            <li>
+                            <i class="icon-product-info icon-product-info-ts-4"></i>
+                            <span>阳光采购</span>
+                            <span>一站服务</span>
+                        </li>
+                                        </ul>
+                </div> 
+            </div>
+        </div>    
+        <div id="js-other-box" sku_code="MGE654">
+
+        </div>       
+         <div class="detail-mid-banner" style="margin-top: 15px;">
+            <a href="http://www.ehsy.com/activity/pc-D_Round" target="_blank">
+                <img src="../images/product_detail_mid_banner.jpg" style="width: 100%;">
+            </a>
+        </div> 
+        <div class="detailBodyWrap">
+            <div class="detailBodyWrap-l">
+                <div class="productLike">
+                    <div class="title">精选商品</div>
+                                    <div class="tip">暂无推荐商品~</div>				
+                                    
+                </div>
+                <div class="productLike">
+                    <div class="title">浏览记录</div>
+                                                    <div class="likeProduct">
+                        <div class="image">
+                            <a href="./xiangqingye.html" title="东成角向磨光机，1200W11800r/min，125mm盘径，S1M-FF02-125B" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2017/12/04/20171204151933611_M.jpg" alt="东成角向磨光机，1200W11800r/min，125mm盘径，S1M-FF02-125B" style="width:100%;height:100%;">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <a href="#" title="东成角向磨光机，1200W11800r/min，125mm盘径，S1M-FF02-125B" target="_blank" class="prouductlike-name">东成角向磨光机，1200W11800r/min，125mm盘径，S1M-FF02-125B</a>
+                        </div>
+                        <div class="price">
+                            <span>
+                                <span>西域价：</span>
+                                <span class="yen new">¥ 302.90</span>
+                            </span>
+                        </div>
+                        <div class="buyWrap"><a class="buy js-add-cart" sku_code="MGE654" quantity="1">加入购物车</a></div>
+                    </div>
+                                    <div class="likeProduct">
+                        <div class="image">
+                            <a href="#" title="博世角磨机，4&quot;迷你型 GWS 6-100，670W，0601375043" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2016/12/06/20161206173935301_M.jpg" alt="博世角磨机，4&quot;迷你型 GWS 6-100，670W，0601375043" style="width:100%;height:100%;">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <a href="#" title="博世角磨机，4&quot;迷你型 GWS 6-100，670W，0601375043" target="_blank" class="prouductlike-name">博世角磨机，4"迷你型 GWS 6-100，670W，0601375043</a>
+                        </div>
+                        <div class="price">
+                            <span>
+                                <span>西域价：</span>
+                                <span class="yen new">¥ 359.90</span>
+                            </span>
+                        </div>
+                        <div class="buyWrap"><a class="buy js-add-cart" sku_code="MAA086" quantity="1">加入购物车</a></div>
+                    </div>
+                                    <div class="likeProduct">
+                        <div class="image">
+                            <a href="#" title="重型自动剥线钳，1.0-3.2mm，BS448132" target="_blank">
+                                <img src="https://image-c.ehsy.com/uploadfile/opc/img/2017/03/31/20170331100623611_M.jpg" alt="重型自动剥线钳，1.0-3.2mm，BS448132" style="width:100%;height:100%;">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <a href="#" title="重型自动剥线钳，1.0-3.2mm，BS448132" target="_blank" class="prouductlike-name">重型自动剥线钳，1.0-3.2mm，BS448132</a>
+                        </div>
+                        <div class="price">
+                            <span>
+                                <span>西域价：</span>
+                                <span class="yen new">¥ 41.09</span>
+                            </span>
+                        </div>
+                        <div class="buyWrap"><a class="buy js-add-cart" sku_code="RAH879" quantity="1">加入购物车</a></div>
+                    </div>
+                                                    
+                </div>                                   
+                <div class="similar-recommend">
+                    <div class="title-tabs">
+                        <span class="active js-tabs-active js-tabs-title" >相关分类</span>
+                        <span class="js-tabs-active js-tabs-title" >推荐品牌</span>
+                    </div>
+                    <div class="similar-list similar-cat js-tabs-content js-tabs-1" style='display:block;'>
+                        <ul class="s-sku">
+                                                    <li><a href="https://www.ehsy.com/category-1416" title="偏心砂磨机/平板砂磨机/砂带机" target="_blank">偏心砂磨机/平板砂磨机/砂带机</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-838" title="电锤钻/冲击钻/电镐" target="_blank">电锤钻/冲击钻/电镐</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-28603" title="电动喷涂机" target="_blank">电动喷涂机</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-28090" title="电动工具配件" target="_blank">电动工具配件</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-19430" title="电动锉刀" target="_blank">电动锉刀</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-29543" title="电动台式砂轮机" target="_blank">电动台式砂轮机</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-1556" title="手电钻" target="_blank">手电钻</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-1723" title="往复锯/曲线锯" target="_blank">往复锯/曲线锯</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-2470" title="斜切锯/型材切割机/电圆锯/云石机" target="_blank">斜切锯/型材切割机/电圆锯/云石机</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-1912" title="直磨机" target="_blank">直磨机</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-1796" title="修边机" target="_blank">修边机</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-942" title="电刨" target="_blank">电刨</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-851" title="吹风机/热风枪" target="_blank">吹风机/热风枪</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-1485" title="热熔胶枪" target="_blank">热熔胶枪</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-2472" title="电动扳手机" target="_blank">电动扳手机</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-9258" title="直向砂轮机" target="_blank">直向砂轮机</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-937" title="电剪" target="_blank">电剪</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-9213" title="电动搅拌机" target="_blank">电动搅拌机</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-11058" title="电动刻字笔" target="_blank">电动刻字笔</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-9259" title="开槽机" target="_blank">开槽机</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-16976" title="磁力钻" target="_blank">磁力钻</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-3426" title="电木铣（雕刻机）" target="_blank">电木铣（雕刻机）</a></li>
+                                                    <li><a href="https://www.ehsy.com/category-9219" title="钻孔机" target="_blank">钻孔机</a></li>
+                                                </ul>
+                    </div>
+                    <div class="similar-list similar-brands js-tabs-content js-tabs-2" style="display:none;">
+                        <ul class="s-sku">
+                                                    <li><a href="https://www.ehsy.com/brand-57" title="博世" target="_blank">博世</a></li>
+                                                    <li><a href="https://www.ehsy.com/brand-95" title="吉多瑞" target="_blank">吉多瑞</a></li>
+                                                    <li><a href="https://www.ehsy.com/brand-108" title="巨霸" target="_blank">巨霸</a></li>
+                                                    <li><a href="https://www.ehsy.com/brand-111" title="凯尼派克" target="_blank">凯尼派克</a></li>
+                                                    <li><a href="https://www.ehsy.com/brand-134" title="力易得" target="_blank">力易得</a></li>
+                                                    <li><a href="https://www.ehsy.com/brand-153" title="牧田" target="_blank">牧田</a></li>
+                                                    <li><a href="https://www.ehsy.com/brand-190" title="史丹利" target="_blank">史丹利</a></li>
+                                                    <li><a href="https://www.ehsy.com/brand-191" title="世达" target="_blank">世达</a></li>
+                                                </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mainDetail productInfo">
+                <ul class="mainDetail-title fixedTop mainDetail-tabs">
+                    <li class="tabsTitle active js-tabs-title" index='0' >商品介绍</li>
+                    <li class="tabsTitle js-tabs-title" index='1'>规格参数</li>
+                    <li class="tabsTitle js-tabs-title" index='2'>包装参数</li>
+                    <li class="tabsTitle js-tabs-title" index='3'>产品咨询</li>
+                </ul>
+                <div class="mainDetail-content fixedTop">
+                        <div class="tabContent product-info-css declaraction clearfix js-tabs-content js-tabs-0" style="display: block;">
+                                <div class="tec-container clearfix js-product-desc">
+                                        <div class="tec-content">
+                                                                                        <div id="tec1">
+                                                                                                    <div class="tec-description">
+                                                    <p><img src="https://image-c.ehsy.com/uploadfile/opc/editor/image/wm/HlFbP19D%2FOYNcqw80JXSwRwhdc0HQw8u%2BcQdymkFENo%3D%3AaWg0OHRzZGxnUFBZU2FBUg%3D%3D" title="HlFbP19D%2FOYNcqw80JXSwRwhdc0HQw8u%2BcQdymkFENo%3D%3AaWg0OHRzZGxnUFBZU2FBUg%3D%3D" alt="RUM534kv.jpg"></p>												</div>
+                                                </div>
+                                                                                        <div id="tec2">
+                                                                                                    <div class="tec-tittle clearfix">
+                                                        <div class="name">
+                                                            <span class="cnName">产品介绍</span>
+                                                            <span class="enName">Overview</span>
+                                                        </div>
+                                                        <i class="sprite-tec-logo"></i>
+                                                    </div>
+                                                                                                    <div class="tec-description">
+                                                    <p><strong><span style="font-size:16px;"></span></strong></p><p><strong><span style="font-size:16px;"></span></strong></p><p style="line-height: normal;"><strong>东成角向磨光机：</strong></p><p style="line-height: normal;">●结构轻质紧凑，操控性极佳</p><p style="line-height: normal;">●铠装电缆线圈，可保护马达不受锋利的打磨尘屑影响，从而可获得更长的使用寿命<br></p><p style="line-height: normal;">●旋转机构齿轮头可确保与每种工作情形保持高质量匹配</p><p style="line-height: normal;">●紧凑轻便的机身握把舒适</p><p></p><p><img src="https://image-c.ehsy.com/uploadfile/opc/editor/image/wm/0ffJfdwboB0qSLn4Pz6VnlC3x0ip%2Be0PoNtRDB8CMTs%3D%3AaWg0OHRzZGxnUFBZU2FBUg%3D%3D" title="0ffJfdwboB0qSLn4Pz6VnlC3x0ip%2Be0PoNtRDB8CMTs%3D%3AaWg0OHRzZGxnUFBZU2FBUg%3D%3D" alt="MGE654产品介绍.jpg"><br></p>												</div>
+                                                </div>
+                                                                                        <div id="tec4">
+                                                                                                    <div class="tec-tittle clearfix">
+                                                        <div class="name">
+                                                            <span class="cnName">技术参数</span>
+                                                            <span class="enName">Specifications</span>
+                                                        </div>
+                                                        <i class="sprite-tec-logo"></i>
+                                                    </div>
+                                                                                                    <div class="tec-description">
+                                                    <table cellspacing="0" cellpadding="0" width="1053" style="width: 768px;"><tbody><tr class="firstRow"><td width="705" style="border-width: 1px; border-color: rgb(166, 166, 166); padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, sans-serif; font-size: 13px;">品牌</span></p></td><td width="705" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-top-color: rgb(166, 166, 166); border-right-color: rgb(166, 166, 166); border-bottom-color: rgb(166, 166, 166); border-left: none; padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, sans-serif; font-size: 13px;">东成</span></p></td></tr><tr><td width="705" style="border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-color: rgb(166, 166, 166); border-bottom-color: rgb(166, 166, 166); border-left-color: rgb(166, 166, 166); border-top: none; padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-size: 13px;"><span style="font-size: 12px; font-family: 微软雅黑, sans-serif;">输入功率</span><span style="font-size: 12px;">(W)</span></span></p></td><td width="705" style="border-top: none; border-left: none; border-bottom-width: 1px; border-bottom-color: rgb(166, 166, 166); border-right-width: 1px; border-right-color: rgb(166, 166, 166); padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-size: 13px;">1200</span></p></td></tr><tr><td width="705" style="border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-color: rgb(166, 166, 166); border-bottom-color: rgb(166, 166, 166); border-left-color: rgb(166, 166, 166); border-top: none; padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-size: 13px;"><span style="font-size: 12px; font-family: 微软雅黑, sans-serif;">空载转速</span><span style="font-size: 12px;">(rpm)</span></span></p></td><td width="705" style="border-top: none; border-left: none; border-bottom-width: 1px; border-bottom-color: rgb(166, 166, 166); border-right-width: 1px; border-right-color: rgb(166, 166, 166); padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-size: 13px;">11800</span></p></td></tr><tr><td width="705" style="border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-color: rgb(166, 166, 166); border-bottom-color: rgb(166, 166, 166); border-left-color: rgb(166, 166, 166); border-top: none; padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, sans-serif; font-size: 13px;">类别</span></p></td><td width="705" style="border-top: none; border-left: none; border-bottom-width: 1px; border-bottom-color: rgb(166, 166, 166); border-right-width: 1px; border-right-color: rgb(166, 166, 166); padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, sans-serif; font-size: 13px;">角磨机</span></p></td></tr><tr><td width="705" style="border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-color: rgb(166, 166, 166); border-bottom-color: rgb(166, 166, 166); border-left-color: rgb(166, 166, 166); border-top: none; padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, sans-serif; font-size: 13px;">推荐用途</span></p></td><td width="705" style="border-top: none; border-left: none; border-bottom-width: 1px; border-bottom-color: rgb(166, 166, 166); border-right-width: 1px; border-right-color: rgb(166, 166, 166); padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-size: 13px;"><span style="font-size: 12px; font-family: 微软雅黑, sans-serif;">切割</span><span style="font-size: 12px;">&amp;</span><span style="font-size: 12px; font-family: 微软雅黑, sans-serif;">粗打磨用</span></span></p></td></tr><tr><td width="705" style="border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-color: rgb(166, 166, 166); border-bottom-color: rgb(166, 166, 166); border-left-color: rgb(166, 166, 166); border-top: none; padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-size: 13px;"><span style="font-size: 12px; font-family: 微软雅黑, sans-serif;">盘径</span><span style="font-size: 12px;">(mm/inch)</span></span></p></td><td width="705" style="border-top: none; border-left: none; border-bottom-width: 1px; border-bottom-color: rgb(166, 166, 166); border-right-width: 1px; border-right-color: rgb(166, 166, 166); padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-size: 13px;">125/5</span></p></td></tr><tr><td width="705" style="border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-color: rgb(166, 166, 166); border-bottom-color: rgb(166, 166, 166); border-left-color: rgb(166, 166, 166); border-top: none; padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, sans-serif; font-size: 13px;">轴径</span></p></td><td width="705" style="border-top: none; border-left: none; border-bottom-width: 1px; border-bottom-color: rgb(166, 166, 166); border-right-width: 1px; border-right-color: rgb(166, 166, 166); padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-size: 13px;">M14</span></p></td></tr><tr><td width="705" style="border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-color: rgb(166, 166, 166); border-bottom-color: rgb(166, 166, 166); border-left-color: rgb(166, 166, 166); border-top: none; padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, sans-serif; font-size: 13px;">标准附件</span></p></td><td width="705" style="border-top: none; border-left: none; border-bottom-width: 1px; border-bottom-color: rgb(166, 166, 166); border-right-width: 1px; border-right-color: rgb(166, 166, 166); padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, sans-serif; font-size: 13px;">扳手、法兰片</span></p></td></tr><tr><td width="705" style="border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-color: rgb(166, 166, 166); border-bottom-color: rgb(166, 166, 166); border-left-color: rgb(166, 166, 166); border-top: none; padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-size: 13px;"><span style="font-size: 12px; font-family: 微软雅黑, sans-serif;">重量</span><span style="font-size: 12px;">(kg)</span></span></p></td><td width="705" style="border-top: none; border-left: none; border-bottom-width: 1px; border-bottom-color: rgb(166, 166, 166); border-right-width: 1px; border-right-color: rgb(166, 166, 166); padding: 0px 7px;"><p style="text-align: center; line-height: normal;"><span style="font-size: 13px;">3</span></p></td></tr></tbody></table>												</div>
+                                                </div>
+                                                                                        <div id="tec6">
+                                                                                                    <div class="tec-tittle clearfix">
+                                                        <div class="name">
+                                                            <span class="cnName">产品细节</span>
+                                                            <span class="enName">Details</span>
+                                                        </div>
+                                                        <i class="sprite-tec-logo"></i>
+                                                    </div>
+                                                <div class="tec-description">
+                                                    <p>
+                                                        <img src="https://image-c.ehsy.com/uploadfile/opc/editor/image/wm/HlFbP19D%2FOYNcqw80JXSwaKVW3BRvDXhw96v8uZ4fbw%3D%3AaWg0OHRzZGxnUFBZU2FBUg%3D%3D"  title="HlFbP19D%2FOYNcqw80JXSwaKVW3BRvDXhw96v8uZ4fbw%3D%3AaWg0OHRzZGxnUFBZU2FBUg%3D%3D">
+                                                        <img src="https://image-c.ehsy.com/uploadfile/opc/editor/image/wm/0ffJfdwboB0qSLn4Pz6VntBB3z2hyN0dTJgz7gJLau0%3D%3AaWg0OHRzZGxnUFBZU2FBUg%3D%3D" title="0ffJfdwboB0qSLn4Pz6VntBB3z2hyN0dTJgz7gJLau0%3D%3AaWg0OHRzZGxnUFBZU2FBUg%3D%3D" alt="MGE654产品细节2.jpg">
+                                                        <img src="https://image-c.ehsy.com/uploadfile/opc/editor/image/wm/0ffJfdwboB0qSLn4Pz6Vnk16q9fgwSB3aboA%2BbvwSkE%3D%3AaWg0OHRzZGxnUFBZU2FBUg%3D%3D"  title="0ffJfdwboB0qSLn4Pz6Vnk16q9fgwSB3aboA%2BbvwSkE%3D%3AaWg0OHRzZGxnUFBZU2FBUg%3D%3D">
+                                                    </p>												
+                                                </div>
+                                                </div>
+                                                                                        <div id="tec10">
+                                                                                                    <div class="tec-tittle clearfix">
+                                                        <div class="name">
+                                                            <span class="cnName">产品应用</span>
+                                                            <span class="enName">Applications</span>
+                                                        </div>
+                                                        <i class="sprite-tec-logo"></i>
+                                                    </div>
+                                                                                                    <div class="tec-description">
+                                                    <p><img src="https://image-c.ehsy.com/uploadfile/opc/editor/image/wm/0ffJfdwboB0qSLn4Pz6VnkKfEunWf1n4%2FUtHdZmb5NQ%3D%3AaWg0OHRzZGxnUFBZU2FBUg%3D%3D" title="0ffJfdwboB0qSLn4Pz6VnkKfEunWf1n4%2FUtHdZmb5NQ%3D%3AaWg0OHRzZGxnUFBZU2FBUg%3D%3D" alt="MGE654产品应用.jpg"></p>												</div>
+                                                </div>
+                                                                                </div>
+                                        <div class="tec-sidebar js-desc-tabs">
+                                            <ul class="tec-sidenav ">
+                                                                                                                                                                                                                                                <li><i class="icon-product-info icon-product-info-desc-tab "></i><a href="https://www.ehsy.com/product-MGE654#tec2">产品介绍</a></li>
+                                                                                                                                                                                                                                                <li><i class="icon-product-info icon-product-info-desc-tab "></i><a href="https://www.ehsy.com/product-MGE654#tec4">技术参数</a></li>
+                                                                                                                                                                                                                                                <li><i class="icon-product-info icon-product-info-desc-tab "></i><a href="https://www.ehsy.com/product-MGE654#tec6">产品细节</a></li>
+                                                                                                                                                                                                                                                <li><i class="icon-product-info icon-product-info-desc-tab "></i><a href="https://www.ehsy.com/product-MGE654#tec10">产品应用</a></li>
+                                                                                                                                        </ul>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="tabContent js-tabs-content js-tabs-1" style="display:none">
+                            <div class="specsParameter-wrap">
+                                                        <table class="standardTable">
+                                    <tbody>
+                                    <tr class="tableHead"><td colspan="2">规格参数</td></tr>
+                                                                                                    <tr class="keyValue"><td>品牌</td><td>Dongcheng/东成</td></tr>
+                                                                                                                                    <tr class="keyValue"><td>输入功率(W)</td><td>1200</td></tr>
+                                                                                                                                    <tr class="keyValue"><td>空载转速(rpm)</td><td>11800</td></tr>
+                                                                                                                                    <tr class="keyValue"><td>类别</td><td>角磨机</td></tr>
+                                                                                                                                    <tr class="keyValue"><td>推荐用途</td><td>切割&amp;粗打磨用</td></tr>
+                                                                                                                                    <tr class="keyValue"><td>盘径(mm/inch)</td><td>125/5</td></tr>
+                                                                                                                                    <tr class="keyValue"><td>轴径</td><td>M14</td></tr>
+                                                                                                                                    <tr class="keyValue"><td>标准附件</td><td>扳手、法兰片</td></tr>
+                                                                                                                                    <tr class="keyValue"><td>重量(kg)</td><td>3.0</td></tr>
+                                                                        
+                                    </tbody>
+                                </table>
+                                                    </div>
+                        </div>
+                        <div class="tabContent js-tabs-content js-tabs-2" style="display:none">
+                                                    <div class="specsParameter-wrap">
+                                <table class="standardTable">
+                                    <tbody>
+                                    <tr class="tableHead"><td colspan="2">包装参数</td></tr>
+                                    <tr class="keyValue"><td>长度(mm)</td><td>460.00</td></tr>
+                                    <tr class="keyValue"><td>宽度(mm)</td><td>170.00</td></tr>
+                                    <tr class="keyValue"><td>高度(mm)</td><td>165.00</td></tr>
+                                    <tr class="keyValue"><td>重量(kg)</td><td>3.979</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tabContent comment js-tabs-content js-tabs-3" style="display:none"> 
+
+                        </div> 
+                        <div class="list-container js-price-note">
+                            <dlv class="content-list">
+            <dt class="title"><i class="icon-product-info icon-product-info-0"></i>价格及货期说明</dt>                        
+        <dd class="content">
+                    <div class="sub-content"><p class="content-item">西域价：是指普通会员最终购买商品的价格。</p></div>
+                    <div class="sub-content"><p class="content-item">会员价或折扣价：是指通过企业认证的会员，可享的专属审批折扣价。</p></div>
+                    <div class="sub-content"><p class="content-item">缺货货期：是指在产品无现货或者库存无法满足采购量时的一个参考发货日期。在商品暂无现货或目前库存不能满足您的采购量时，西域需要一定的时间来为您备货；如商品的缺货货期是10天，则您下单后，西域会在10天内尽快为您发货。如果数量庞大，请咨询我们客服具体货期。</p></div>
+                </dd>
+            <dt class="title"><i class="icon-product-info icon-product-info-1"></i>保障声明</dt>                        
+        <dd class="content">
+                    <div class="sub-content"><p class="content-item">正品保障</p></div>
+                    <div class="sub-content"><p class="content-item">西域向您保证所售商品均为正品行货，开具正规发票。</p></div>
+                    <div class="sub-content"><p class="content-item">注：因厂家会不提前通知的情况下更改产品包装、附件或产地，本司不能确保客户收到的货物与本网站的图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同品牌同型号的主流产品一致。若本网站没有及时更新，敬请谅解！</p></div>
+                    <div class="sub-content"><p class="content-item">售后保障</p></div>
+                    <div class="sub-content"><p class="content-item">西域产品在使用过程中如因产品质量问题有“退换返修”的需求，您可通过西域客户端提交您的售后申请，西域客服会第一时间为您处理，在售后服务过程中如遇到问题也可致电西域客服热线：400-885-8833</p></div>
+                    <div class="sub-content"><p class="content-item">1、<a href="http://www.ehsy.com/help_center/15" target="_blank">西域退货政策</a></p></div>
+                    <div class="sub-content"><p class="content-item">2、售后上门取件</p></div>
+                    <div class="sub-content"><p class="content-item">您购买的西域商品7日内（含7日，自物流系统反馈签收之日起计算）因质量问题（非人为使用损坏）提交退换申请且审核通过，在西域配送范围内，西域提供免费上门取件服务。非质量问题的上门取件需要收费。法定节假日、停电、天气等不可抗力情况除外。</p></div>
+                    <div class="sub-content"><p class="content-item">3、质量故障处理的时效保障</p></div>
+                    <div class="sub-content"><p class="content-item">您购买的西域商品在质保期内如出现故障，西域售后服务部收到故障品并确认属于质量故障（以国家三包法等有关法律、法规为准）开始计时。在1个工作日内（工作时间每周一至周五，8:30至17:30，法定节假日、停电等无法正常处理情况除外）给出售后问题的处理方案。</p></div>
+                </dd>
+            <dt class="title"><i class="icon-product-info icon-product-info-2"></i>权利声明</dt>                        
+        <dd class="content">
+                    <div class="sub-content"><p class="content-item">西域上的所有商品信息（包括但不限于商品图片、商品介绍、产品视频及文档）、产品咨询信息，是西域重要的经营资源，未经许可，禁止非法转载及使用。</p></div>
+                </dd>
+                           </dlv>
+                        </div>	          
+                                         
+                </div>   
+                <div id="js-product-consult">
+                <div class="comment">
+        <ul class="comment-tab clearfix js-consult-title">
+                    <li onclick="product_consult_tabs(this,'MGE654','0');" class="tab-title active" data="0"><a>全部咨询</a></li>
+                    <li onclick="product_consult_tabs(this,'MGE654','1');" class="tab-title " data="1"><a>购买咨询</a></li>
+                    <li onclick="product_consult_tabs(this,'MGE654','2');" class="tab-title " data="2"><a>售后咨询</a></li>
+                </ul>
+        <div class="promise">
+            <strong>温馨提示：</strong>
+            <ul>
+                <li>我们会有专人跟进您的咨询，咨询回复的工作时间为：周一至周五。8:30-17:30,1个工作日（节假日除外）内会尽快给您答复，请耐心等待。</li>
+                <li>如您的问题特别紧急，请拨打我们的客户热线：客服热线：400-821-8800，售后热线：400885-8833</li>
+                <li>您可以到<a ref="nofollow" href="https://www.ehsy.com/index.php?route=account/ask">“我的西域-我的咨询”</a>去查看您发布过的所有咨询及西域回复</li>
+            </ul>
+            <div class="discuss"><a onclick="product_consult_add(this,'MGE654');">发表咨询</a></div>
+        </div>
+    
+    
+        <div class="comment-list clearfix">
+            <ul style="display: block;">
+                            <li>暂无此类咨询</li>
+                        </ul>
+        </div>
+        
+        <div class="showPagintion clearfix" page-type-data="product-consult">
+            </div>
+        
+    		    </div>    
+               </div> 
+            </div>
+       </div>            
+    </div>
+    <div class="layout-footer-content">
+        <div class="footer-box">
+            <div class="footer-a-bd">
+                <div>
+                    <i class="icon-slogans-01"></i>
+                    <span class="footer-a-span">正品行货</span>
+                    <span class="footer-b-span">品类齐全</span>
+                </div>
+                <div style="text-align: center;">
+                    <i class="icon-slogans-02"></i>
+                    <span class="footer-a-span">多仓直发</span>
+                    <span class="footer-b-span">货期保证</span>
+                </div>
+                <div style="text-align: center;">
+                    <i class="icon-slogans-03"></i>
+                    <span class="footer-a-span">会员特折</span>
+                    <span class="footer-b-span">满额包邮</span>
+                </div>
+                <div style="text-align: right;">
+                    <i class="icon-slogans-04"></i>
+                    <span class="footer-a-span">阳光采购</span>
+                    <span class="footer-b-span">一站服务</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-b">
+            <div class="footer-b-bd">
+                <ul class="foot-help clearfix">
+                    <li class="footer-b-li">
+                        <div class="footer-b-li-title">西域</div>
+                        <ul>
+                            <li><a rel="external nofollow" href="https://www.ehsy.com/about">走进西域</a></li>
+                            <li><a rel="external nofollow" href="http://www.mdsin.com" hidden="hidden">麦森医疗</a></li>
+                            <li><a rel="external nofollow" href="http://www.ehssafety.com" hidden="hidden">怡海森工程</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-b-li">
+                        <div class="footer-b-li-title">业务合作</div>
+                        <ul>
+                            <li><a rel="external nofollow" href="https://www.ehsy.com/mro">客户MRO整合方案</a></li>
+                            <li><a rel="external nofollow" href="https://www.ehsy.com/supplier">供应商合作</a></li>
+                            <li><a rel="external nofollow" href="http://yc.yonyou.com/yuncai/" target="_blank">友云采</a></li>
+                            <li><a rel="external nofollow" href="https://www.ehsy.com/anti_fraud" target="_blank">反舞弊及举报</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-b-li">
+                        <div class="footer-b-li-title">客服中心</div>
+                        <ul>
+                            <li><a rel="external nofollow" href="https://www.ehsy.com/faq">常见问题</a></li>
+                        </ul>
+                    </li>	
+                    <li class="footer-b-li">
+                        <div class="footer-b-li-title">帮助中心</div>
+                        <ul>
+                            <li><a rel="external nofollow" href="https://www.ehsy.com/help_center/c-2">注册/登录</a></li>
+                            <li><a rel="external nofollow" href="https://www.ehsy.com/help_center/c-3">账户管理</a></li>
+                            <li><a rel="external nofollow" href="https://www.ehsy.com/help_center/c-4">购物流程</a></li>
+                            <li><a rel="external nofollow" href="https://www.ehsy.com/help_center/c-5">售后服务</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-b-li-2">
+                        <div class="foot-phone clearfix">
+                            <img class="footer-wx" alt="西域-MRO工业品|MRO供应商|MRO整合|MRO领导者—西域-一站式MRO工业品现货交易平台-微信|微信平台" src="../images/footer-right-01.png">
+                            <div>
+                                <div class="foot-phone-1" style="line-height:14px">400-821-8800</div>
+                                <div class="foot-phone-2"><span style="font-size: 14px;font-family: 'Hiragino Sans GB', 微软雅黑, sans-serif;">售后热线：</span>400-885-8833</div>
+                            </div>
+                        </div>
+                        <div class="foot-phone-remark clearfix" style="font-size:12px;margin-bottom: 10px;">工作时间 周一到周五（9:00-18:00）</div>
+                        <div class="foot-download clearfix">
+                            <div>
+                                <img alt="" src="../images/footer-wechat.png">
+                                <span>微信：西域供应链</span>
+                            </div>
+                            <div>
+                                <img alt="" src="../images/footer-app.png">
+                                <span style="padding-left: 19px;">APP：西域</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                                        <div class="copyright-ul">
+                    其他链接：
+                    <a rel="external nofollow" href="https://www.ehsy.com/about">关于我们</a>
+                    <span>|</span>
+                    <a rel="external nofollow " href="https://www.ehsy.com/statement">法律声明</a>
+                    <span>|</span>
+                    <a rel="external nofollow " href="https://www.ehsy.com/investment">投资洽谈</a>
+                    <span>|</span>
+                    <a rel="external nofollow " href="https://www.ehsy.com/contact">联系我们</a>
+                    <span>|</span>
+                    <a rel="external nofollow " href="https://www.ehsy.com/agreement">服务协议</a>
+                    <span>|</span>
+                    <a rel="external nofollow " href="https://www.ehsy.com/privacy">隐私声明</a>
+                    <span>|</span>
+                    <a rel="external nofollow " href="https://www.ehsy.com/copyright">版权声明</a>
+                    <span>|</span>
+                    <a href="https://www.ehsy.com/category/list">网站地图</a>
+                    <span>|</span>
+                    <a href="https://www.ehsy.com/yiyao">药品信息专栏</a>
+                    <span>|</span>
+                    <a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">沪ICP备09003861号</a>
+                </div>
+                <div class="copyright-state"></div>
+                <div class="credit-bar">
+                    <a rel="nofollow" href="http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&amp;serial=9031000020170329150446000001676833-SAIC_SHOW_310000-20120330135456252905&amp;signData=MEUCIQDzuNYpWqM/kehTjiCr9PyMahr9VZ2nGTgqFDa2fzHR6QIgEzhM4lQeJu+FcMlTlffpkOekHNKZ7Twp0gvD1LGW3lU=" target="_blank"><img src="../images/footer-web-03.png"></a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div style="width:300px;margin:0 auto; padding:20px 0;">
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502008645" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="../images/beian.png" style="float:left;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011502008645号</p></a>
+    </div>
+    <div class="layout-right-bar">
+        <div class="ehsy-sidebar">
+            <div class="ehsy-sidebar-tabs">
+                            <div class="sidebar-tabs-uc" id="js-rb-account"><div><a rel="nofollow" onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/index');"><i class="icon-right-bar icon-rb-account"></i></a></div>
+                </div>
+                            <div class="sidebar-tabs-car"><div><a rel="nofollow" href="https://www.ehsy.com/index.php?route=checkout/cart"><i class="icon-right-bar icon-rb-cart"></i><div class="sider_cart_num js-cart-num">17</div></a></div>
+                </div>
+                <div class="sidebar-tabs-collection" id="js-rb-collection"><div><a rel="nofollow" onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/favorite');"><i class="icon-right-bar icon-rb-collection"></i></a></div>
+                </div>
+                <div><div id="nb_icon_wrap_qiye_new"><a href="http://q.url.cn/cdT6L9?_type=wpa&amp;qidian=true" target="_blank"><img src="../images/service.gif"></a></div></div>
+            </div>
+            <div class="ehsy-sidebar-footer" style="display: none;"><i class="icon-right-bar icon-rb-top"></i><span>回到顶部</span></div>
+        </div>
+    </div>
+    <div id="js-top-fix-bar" class="nav-thumbnail-container" style="display: none;">
+        <div class="nav-logo">
+            <div class="index-logo">
+                <a title="西域商城" href="https://www.ehsy.com/"><img alt="西域商城" src="../images/icon-logo.png"></a>
+            </div>
+        </div>    
+        <div class="nav-menu menu">
+
+                <div class="menu-all nav-menu-all js-menu-fix-top">
+                    <div class="nav-menu-title-div menu-title-div">
+                        <a>
+                           <span class="menu-all-span nav-menu-all-span">全部商品分类</span>
+                           <span class="menu-right nav-menu-right nav-menu-chevron-down js-menu-arrow"></span>
+                        </a>
+                    </div>
+                    <div class="menu-fix-content js-menu-clone-box">
+                    
+                    </div>
+                </div>
+        </div>
+        <div class="index-search-div nav-index-search-div">
+            <div class="js-fix-bar-search">    
+<div class="layout-search search-wrap" id="globalSearchDiv" data-url="category/result">
+    <div class="glob-search-input-div">
+        <i class="icon-camera tooltip" onclick="modalShow();">
+            <span class="tooltiptext">上传图片&nbsp;/&nbsp;搜索相关产品</span>
+        </i>
+        <input class="glob-search-input" placeholder="请输入产品名称 品牌 型号 SKU号 或CAS号" type="text" name="search" value="" autocomplete="off">
+    </div>
+    <div class="glob-search-submit btn-search" url="https://www.ehsy.com/search">搜索</div>
+
+    <div class="user-photo-box" style="display: none">
+        <img id="user-photo" src="">
+    </div>
+
+
+    <i class="icon-search"></i>
+    <ul class="hot-word">
+        </ul>
+</div>
+
+<div class="search-pic" style="display: none;">
+    <div class="modal fade" id="changeModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="modalHide();">×</button>
+                    <h4 class="modal-title text-primary text-center">
+                        <i class="fa fa-pencil"></i>
+                        图片裁剪
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p class="tip-info text-center">
+                        未选择图片
+                    </p>
+                    <div class="cropper-content hidden">
+                        <div class="cropper-div">
+                            <img id="tailoringImg">
+                        </div>
+                        <p class="cropper-hint">注：透明背景部分默认填充白色</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <label class="btn btn-danger pull-left" title="上传图片">
+                        <input type="file" class="sr-only" id="chooseImg" onchange="selectImg(this)" accept="image/*">
+                        <span>打开图片</span>
+                    </label>
+                    <button class="btn btn-primary disabled" disabled="true" onclick="sendPhoto(this);" data-action="https://www.ehsy.com/index.php?route=search/pic_result">确认选区</button>
+                    <button class="btn btn-close" aria-hidden="true" onclick="modalHide();">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop" onclick="modalHide();"></div>
+</div>  
+          </div>
+            <div class="nav-my-ehsy-show">
+                <div class="nav-ehsy-a">
+                    <a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/index');" rel="external nofollow" class="js-myehsy" style="font-size:14px;"><i class="icon-header-bar icon-header-bar-my"></i>我的西域</a>
+                    <div class="nav-my-ehsy js-myehsy-box"><div class="my-ehsy js-clone-myehsy">
+                <ul>
+                                    <div class="orders">
+                        <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order');"><i class="icon-header-bar icon-header-bar-my-1-1"></i>我的订单</a></li>
+                        <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_pay');"><i class="icon-header-bar icon-header-bar-my-2-1"></i>待付款</a></li>
+                        <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_take');"><i class="icon-header-bar icon-header-bar-my-3-1"></i>待收货</a></li>
+                    </div>
+                        <div class="orders">
+                            <li class="header-my-collection"><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/favorite');"><i class="icon-header-bar icon-header-bar-my-1-2"></i>我的收藏</a></li>
+                            <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/mycoupon');"><i class="icon-header-bar icon-header-bar-my-2-2"></i>我的优惠券</a></li>
+                            <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_after');"><i class="icon-header-bar icon-header-bar-my-3-2"></i>售后</a></li>
+                        </div>
+                        <div class="orders">
+                            <!-- <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/free_inquiry');"><i class="icon-header-bar icon-header-bar-my-1-3"></i>我的询价</a></li> -->
+                            <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/quotation');"><i class="icon-header-bar icon-header-bar-my-2-3"></i>我的报价单</a></li>
+                            <li class="header-my-consultant"><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/ask');"><i class="icon-header-bar icon-header-bar-my-3-3"></i>我的咨询</a></li>
+                        </div>
+
+                 </ul>
+                  </div></div>
+                  </div>
+            </div>
+            <div class="s-carts layout-mini-cart js-mini-cart js-fix-mini-cart">
+                <span class="cart-text-before"><a rel="external nofollow" href="https://www.ehsy.com/index.php?route=checkout/cart" class="s-carts-text"><i class="sprite-tools_cart"></i>我的购物车</a></span>
+                <a rel="external nofollow" href="https://www.ehsy.com/index.php?route=checkout/cart" class="s-carts-text"><span class="cart-num cart-num-cover js-cart-num">0</span></a>
+            </div>
+        </div>
+        <div id="nb_icon_wrap_service" class="service-gif js-proxy-qqChat">
+            <a href="http://q.url.cn/cdT6L9?_type=wpa&amp;qidian=true" target="_blank"><img src="../images/servicegif.gif"> <span>在线客服</span></a>
+            
+        </div>
+    </div>
+    <div id="ajax-layer-add-cart" class="layer addcart" style="display:none">
+        <div class="modal" style="width:350px;left:456.5px;">
+                <div class="modal-header"><div class="title">
+                    <button class="close" type="button" onclick="$('#ajax-layer-add-cart').remove();">×</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="content">
+                    <div class="popup-content-main">
+                        <i class="popup-add-success"></i>
+                        <span>商品已成功加入购物车！</span>
+                    </div>
+                    <div class="popup-footer">
+                        <a class="jumpToCart" onclick="toCheckoutCart('ajax-layer-add-cart');" style="cursor:pointer;">去购物车结算</a>
+                        <span class="anotherChoose">您还可以<a class="continue-shopping" onclick="$('#ajax-layer-add-cart').remove();">继续购物</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+
+        </div>
+        </div>
+    <script src="../lib/jquery-1.12.4.js"></script>
+    <script src="../js/xiangqingye.js"></script>
+    <script src="../js/public.js"></script>
+</body>
+</html>

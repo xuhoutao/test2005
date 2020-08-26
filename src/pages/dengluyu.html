@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/home5.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+</head>
+<body>
+    
+        <div class="header-bar">
+            <div class="header-bar1 container">
+               <div class="header-left">
+                     <a class="fl">登录</a>
+                     <span>|</span>
+                     <a  class="fl" href="./zhuce.html">免费注册</a>
+                     <span>|</span>
+                     <a  class="fl" href="https://www.ehsy.com/help_center/first">帮助中心</a>
+              </div>
+              <div class="header-right">
+                <div class="right-bar">
+                    <a class="fr js-proxy-qqChat" href="http://q.url.cn/cdT6L9?_type=wpa&qidian=true" target="_blank"><i class="iconfont icon-kefu icon-header-bar-help"></i>在线客服</a>
+                    <li class="fr">|</li>
+                            <span rel="external nofollow" class="fr" ><i class="iconfont icon-dianhua icon-header-bar-help"></i><span class="text-earphone">400-821-8800</span></span>
+                            <li class="fr">|</li>
+                    <li class="fr mobile-show">
+                        <a rel="external nofollow" class="mobile-ahref">
+                            <i class="iconfont icon-shouji icon-header-bar-help"></i>手机西域
+                            <i class="iconfont icon-jiantou icon-header-bar1-help"></i>
+                        </a>
+                        <div class="mobile-ehsy-download">
+                            <img style="width: 130px;height: 130px;" src="../images/code-app.png" class="mobile-code" alt="手机西域下载二维码">
+                            <div class="saoyisao">扫一扫,下载西域客户端</div>
+                            <div class="shoujigouwu">手机采购 移动办公</div>
+                            <a rel="external nofollow" href="https://itunes.apple.com/cn/app/id1063629472?mt=8" target="_blank">
+                                <i class="iconfont icon-shezhi icon-header-bar-code-help"></i>
+                            </a>
+                            <a rel="external nofollow" href="https://itunes.apple.com/cn/app/id1063629472?mt=8" target="_blank">
+                                <span class="mo-ios-span">iPhone</span>
+                            </a>
+                            <a rel="external nofollow" href="http://static-c.ehsy.com/www/files/ehsy.apk">
+                                <i class="iconfont icon-jiantou icon-header-bar-code-help"></i>
+                            </a>
+                            <a href="http://static-c.ehsy.com/www/files/ehsy.apk">
+                                <span class="mo-android-span">Android</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="fr">|</li>
+                    <a rel="external nofollow" class="fr" href="https://www.ehsy.com/index.php?route=quick/cart">快速下单</a>
+                            <li class="fr">|</li>		
+                    <li class="fr my-ehsy-show">
+                        <a class="ehsy-a" onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/index');" rel="external nofollow">
+                            <i class="iconfont icon-shezhi icon-header-bar-help"></i>我的西域
+                            <i class="iconfont icon-jiantou icon-header-bar1-help"></i>
+                        </a>
+                        <div class="my-ehsy js-clone-myehsy">
+                            <ul>
+                                                <div class="orders">
+                                    <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order');"><i class="iconfont icon-dingdan icon-header-bar-my-1-1"></i>我的订单</a></li>
+                                    <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_pay');"><i class="iconfont icon-daifukuan icon-header-bar-my-2-1"></i>待付款</a></li>
+                                    <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_take');"><i class="iconfont icon-shouhuo icon-header-bar-my-3-1"></i>待收货</a></li>
+                                </div>
+                                    <div class="orders">
+                                        <li class="header-my-collection"><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/favorite');"><i class="iconfont icon-shoucang icon-header-bar-my-1-2"></i>我的收藏</a></li>
+                                        <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/mycoupon');"><i class="iconfont icon-youhui icon-header-bar-my-2-2"></i>我的优惠券</a></li>
+                                        <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/my_order/to_after');"><i class="iconfont icon-shouhou icon-header-bar-my-3-2"></i>售后</a></li>
+                                    </div>
+                                    <div class="orders">
+                                        <!-- <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/free_inquiry');"><i class="icon-header-bar icon-header-bar-my-1-3"></i>我的询价</a></li> -->
+                                        <li><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/quotation');"><i class="iconfont icon-pajia icon-header-bar-my-2-3"></i>我的报价单</a></li>
+                                        <li class="header-my-consultant"><a onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/ask');"><i class="iconfont icon-zixun icon-header-bar-my-3-3"></i>我的咨询</a></li>
+                                    </div>
+            
+                              </ul>
+                        </div>
+                    </li>
+                    <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+         </div>
+         <div class="header-wrap">
+            <div class="header-box">
+                <div class="header-logo">
+                    <a href="https://www.ehsy.com/" title="西域 MRO 专属采购平台">
+                                        <img src="../images/logo.png" alt="西域 MRO 专属采购平台">
+                    </a>
+                    <span class="doc-tit">登录</span>
+                </div>
+            </div>
+        </div>
+        <div class="login-wrap">
+            <div class="login-banner">
+                        <a href="javascript:;">
+                    <img src="../images/login_bg.jpg" width="560" height="300">
+                </a>
+                    </div>
+            <div id="login-content" data-action="https://www.ehsy.com/index.php?route=account/login/ajax_login_content">
+        <div class="layout-login">
+            <div class="logo"><i class="icon-logo"></i></div>
+            <div class="login-switch">
+                <div class="login-up-btn active">账户密码登录</div>
+                <div class="login-phone-btn ">手机验证码登录</div>
+            </div>
+            <form class="login-pop-form" id="form_login" method="get">
+                <input type="hidden" name="from" value="">
+                <input type="hidden" name="jumpurl" value="">
+                <div class="error-message">
+                    <div class="error-message-box" style="display: none">
+                        <i class="icon-error-del"></i>
+                        <span class="loginpop-warn"></span>
+                    </div>
+                </div>
+                <div class="loginpop-user clearfix">
+                    <div class="input-wrap">
+                        <input name="username" class="name login_messageName" placeholder="请输入手机号/邮箱/用户名" type="text" value="" autocomplete="off" data-url_check_username="https://www.ehsy.com/index.php?route=account/login/check_username">
+                        <i class="icon sprite-loginpop_clear"></i>
+                    </div>
+                </div>
+                <div class="loginpop-mes-code clearfix">
+                    <div class="input-wrap">
+                        <input name="login_messageCode" class="name login_messageCode" placeholder="短信验证码" autocomplete="off" type="text">
+                        <i class="icon sprite-loginpop_clear"></i>
+                        <button type="button" class="code" data-action="https://www.ehsy.com/index.php?route=account/register/sms_verify_code&amp;nocode=1">获取</button>
+                    </div>
+                </div>
+                <div class="pwd-rule">6-20位，字母、数字、符号（除空格）至少两种组成</div>
+                <div class="loginpop-password clearfix">
+                <div class="input-wrap">
+                    <input class="pwd" placeholder="请输入密码" name="password" type="password" autocomplete="off">
+                    <i class="icon sprite-loginpop_clear"></i>
+                </div>
+                </div>
+                <input type="button" class="loginpop-btn"  value="登录">
+                <div class="loginpop-auto">
+                    <div class="checkbox-auto-bg">
+                        <i class="sprite-auto_login"></i>
+                    </div>
+                    <input id="auto-login-checkbox" name="login_isRememberCount" type="checkbox">
+                    <label for="auto-login-checkbox">记住用户名 | </label>
+                    <a class="forget-assword" href="https://www.ehsy.com/index.php?route=account/findpwd">找回密码</a>
+                    <a class="register-now for-login" href="./zhuce.html">注册</a>
+                </div>
+        
+            </form>
+        
+            <form class="login-pop-form" id="form_login_phone" style="display: none" method="get">
+                <input type="hidden" name="from" value="">
+                <input type="hidden" name="jumpurl" value="">
+        
+                <div class="error-message">
+                    <div class="error-message-box2" style="display: none">
+                        <i class="icon-error-del"></i>
+                        <span class="loginpop-warn2"></span>
+                    </div>
+                </div>
+                <div class="loginpop-user clearfix">
+                    <div class="input-wrap">
+                        <input name="login_phone" class="name login_messageName" placeholder="请输入手机号" type="text" value="" autocomplete="off" data-url_check_username="https://www.ehsy.com/index.php?route=account/login/check_username">
+                        <i class="icon sprite-loginpop_clear"></i>
+                    </div>
+                </div>
+        
+                <div class="loginnpop-phone-code clearfix" style="display: block">
+                    <div class="input-wrap">
+                        <input name="login_messageCode" class="name login_messageCode" placeholder="请输入短信验证码" autocomplete="off" type="text">
+                        <i class="icon sprite-loginpop_clear"></i>
+                    </div>
+                    <div class="verify-code">
+                        <button type="button" class="code login_tncode" data-status="0" data-timeid="0">获取验证码</button>
+                    </div>
+                </div>
+        
+                <input type="button" class="loginpop-btn"  value="登录">
+        
+                <div class="loginpop-auto">
+                    <div class="checkbox-auto-bg">
+                        <i class="sprite-auto_login"></i>
+                    </div>
+                    <input id="auto-login-checkbox2" name="login_isRememberCount" type="checkbox" >
+                    <label for="auto-login-checkbox2">记住用户名</label>
+                    <a class="register-now for-login" href="./zhuce.html">注册</a>
+                </div>
+            </form>
+        </div>
+        </div>
+        </div>
+         <div class="layout-footer-content">
+            <div class="footer-box">
+                <div class="footer-a-bd">
+                    <div>
+                        <i class="icon-slogans-01"></i>
+                        <span class="footer-a-span">正品行货</span>
+                        <span class="footer-b-span">品类齐全</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <i class="icon-slogans-02"></i>
+                        <span class="footer-a-span">多仓直发</span>
+                        <span class="footer-b-span">货期保证</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <i class="icon-slogans-03"></i>
+                        <span class="footer-a-span">会员特折</span>
+                        <span class="footer-b-span">满额包邮</span>
+                    </div>
+                    <div style="text-align: right;">
+                        <i class="icon-slogans-04"></i>
+                        <span class="footer-a-span">阳光采购</span>
+                        <span class="footer-b-span">一站服务</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-b">
+                <div class="footer-b-bd">
+                    <ul class="foot-help clearfix">
+                        <li class="footer-b-li">
+                            <div class="footer-b-li-title">西域</div>
+                            <ul>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/about">走进西域</a></li>
+                                <li><a rel="external nofollow" href="http://www.mdsin.com" hidden="hidden">麦森医疗</a></li>
+                                <li><a rel="external nofollow" href="http://www.ehssafety.com" hidden="hidden">怡海森工程</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-b-li">
+                            <div class="footer-b-li-title">业务合作</div>
+                            <ul>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/mro">客户MRO整合方案</a></li>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/supplier">供应商合作</a></li>
+                                <li><a rel="external nofollow" href="http://yc.yonyou.com/yuncai/" target="_blank">友云采</a></li>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/anti_fraud" target="_blank">反舞弊及举报</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-b-li">
+                            <div class="footer-b-li-title">客服中心</div>
+                            <ul>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/faq">常见问题</a></li>
+                            </ul>
+                        </li>	
+                        <li class="footer-b-li">
+                            <div class="footer-b-li-title">帮助中心</div>
+                            <ul>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/help_center/c-2">注册/登录</a></li>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/help_center/c-3">账户管理</a></li>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/help_center/c-4">购物流程</a></li>
+                                <li><a rel="external nofollow" href="https://www.ehsy.com/help_center/c-5">售后服务</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-b-li-2">
+                            <div class="foot-phone clearfix">
+                                <img class="footer-wx" alt="西域-MRO工业品|MRO供应商|MRO整合|MRO领导者—西域-一站式MRO工业品现货交易平台-微信|微信平台" src="../images/footer-right-01.png">
+                                <div>
+                                    <div class="foot-phone-1" style="line-height:14px">400-821-8800</div>
+                                    <div class="foot-phone-2"><span style="font-size: 14px;font-family: 'Hiragino Sans GB', 微软雅黑, sans-serif;">售后热线：</span>400-885-8833</div>
+                                </div>
+                            </div>
+                            <div class="foot-phone-remark clearfix" style="font-size:12px;margin-bottom: 10px;">工作时间 周一到周五（9:00-18:00）</div>
+                            <div class="foot-download clearfix">
+                                <div>
+                                    <img alt="" src="../images/footer-wechat.png">
+                                    <span>微信：西域供应链</span>
+                                </div>
+                                <div>
+                                    <img alt="" src="../images/footer-app.png">
+                                    <span style="padding-left: 19px;">APP：西域</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                                            <div class="copyright-ul">
+                        其他链接：
+                        <a rel="external nofollow" href="https://www.ehsy.com/about">关于我们</a>
+                        <span>|</span>
+                        <a rel="external nofollow " href="https://www.ehsy.com/statement">法律声明</a>
+                        <span>|</span>
+                        <a rel="external nofollow " href="https://www.ehsy.com/investment">投资洽谈</a>
+                        <span>|</span>
+                        <a rel="external nofollow " href="https://www.ehsy.com/contact">联系我们</a>
+                        <span>|</span>
+                        <a rel="external nofollow " href="https://www.ehsy.com/agreement">服务协议</a>
+                        <span>|</span>
+                        <a rel="external nofollow " href="https://www.ehsy.com/privacy">隐私声明</a>
+                        <span>|</span>
+                        <a rel="external nofollow " href="https://www.ehsy.com/copyright">版权声明</a>
+                        <span>|</span>
+                        <a href="https://www.ehsy.com/category/list">网站地图</a>
+                        <span>|</span>
+                        <a href="https://www.ehsy.com/yiyao">药品信息专栏</a>
+                        <span>|</span>
+                        <a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">沪ICP备09003861号</a>
+                    </div>
+                    <div class="copyright-state"></div>
+                    <div class="credit-bar">
+                        <a rel="nofollow" href="http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&amp;serial=9031000020170329150446000001676833-SAIC_SHOW_310000-20120330135456252905&amp;signData=MEUCIQDzuNYpWqM/kehTjiCr9PyMahr9VZ2nGTgqFDa2fzHR6QIgEzhM4lQeJu+FcMlTlffpkOekHNKZ7Twp0gvD1LGW3lU=" target="_blank"><img src="../images/footer-web-03.png"></a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502008645" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="../images/beian.png" style="float:left;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011502008645号</p></a>
+        </div>
+        <div class="layout-right-bar">
+            <div class="ehsy-sidebar">
+                <div class="ehsy-sidebar-tabs">
+                    <div class="sidebar-tabs-uc" id="js-rb-account">
+                                    <div>
+                                        <a rel="nofollow" onclick="ajax_verify_jump('account','https://www.ehsy.com/index.php?route=account/index');">
+                                        <i class="icon-right-bar icon-rb-account"></i>
+                                        </a>
+                                    </div>
+                    </div>                                            
+                    <div>
+                        <div id="nb_icon_wrap_qiye_new">
+                            <a href="http://q.url.cn/cdT6L9?_type=wpa&amp;qidian=true" target="_blank">
+                                <img src="../images/service.gif">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ehsy-sidebar-footer" style="display: block;"><i class="icon-right-bar icon-rb-top" style="display: block;"></i><span style="display: none;">回到顶部</span></div>
+            </div>
+        </div>
+    
+    <script src="../lib/jquery-1.12.4.js"></script>
+    <script src="../js/dengluye.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/public.js"></script>
+</body>
+</html>
